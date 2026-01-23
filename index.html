@@ -1,84 +1,87 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bhin lab</title>
-  
+
   <!-- 파비콘 설정 -->
   <link rel="icon" type="image/x-icon" href="images/logo_251125.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  
+
   <link rel="stylesheet" href="style.css?v=2025012808">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
   <!-- AOS 라이브러리 추가 -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
 
-      <!-- 로딩 오버레이 -->
-    <div class="loading-overlay" id="loadingOverlay">
-        <div class="loading-content">
-            <div class="logo-container">
-                <img src="images/logo_251125.png" alt="로고" class="loading-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                <div class="logo-text" style="display: none;">Bhin lab</div>
-                <div class="logo-subtitle">Cancer Genomics & Intelligence</div>
-            </div>
-            
-            <div class="loading-bar">
-                <div class="loading-progress"></div>
-            </div>
-            
-        </div>
-    </div>
-
-    <!-- 헤더 -->
-    <header class="site-header">
-      <div class="header-container">
-        <div class="logo">
-          <a href="index.html">
-            <img src="images/logo_251125.png" alt="로고" class="logo-image" onerror="this.style.display='none';">
-            <div>
-              <h1>Bhin lab</h1>
-              <p class="lab-subtitle">Cancer Genomics & Intelligence</p>
-            </div>
-          </a>
-        </div>
-        <nav class="main-nav">
-          <ul>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="members.html">Members</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="positions.html">Positions</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="galleries.html">Galleries</a></li>
-          </ul>
-        </nav>
-        
-        <!-- 모바일 메뉴 버튼 -->
-        <div class="mobile-menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        
-        <!-- 모바일 드롭다운 메뉴 -->
-        <div class="mobile-dropdown">
-          <ul>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="members.html">Members</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="positions.html">Positions</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="galleries.html">Galleries</a></li>
-          </ul>
-        </div>
+  <!-- 로딩 오버레이 -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-content">
+      <div class="logo-container">
+        <img src="images/logo_251125.png" alt="로고" class="loading-logo"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <div class="logo-text" style="display: none;">Bhin lab</div>
+        <div class="logo-subtitle">Cancer Genomics & Intelligence</div>
       </div>
-    </header>
+
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 헤더 -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo_251125.png" alt="로고" class="logo-image" onerror="this.style.display='none';">
+          <div>
+            <h1>Bhin lab</h1>
+            <p class="lab-subtitle">Cancer Genomics & Intelligence</p>
+          </div>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="positions.html">Positions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="galleries.html">Galleries</a></li>
+        </ul>
+      </nav>
+
+      <!-- 모바일 메뉴 버튼 -->
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- 모바일 드롭다운 메뉴 -->
+      <div class="mobile-dropdown">
+        <ul>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="positions.html">Positions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="galleries.html">Galleries</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
   <!-- 메인 배너: 좌우 2열 그리드 (좌: 이미지 슬라이드, 우: 설명) -->
   <section class="main-banner-container" data-aos="fade-up" data-aos-duration="1000">
@@ -87,19 +90,23 @@
       <div class="banner-left">
         <div class="banner-slides" id="bannerSlider">
           <div class="banner-slide active">
-            <img src="images/research1.png" alt="Research 1" class="banner-bg-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <img src="images/research1.png" alt="Research 1" class="banner-bg-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <div class="image-placeholder" style="display: none;">Research Image 1</div>
           </div>
           <div class="banner-slide">
-            <img src="images/research2.png" alt="Research 2" class="banner-bg-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <img src="images/research2.png" alt="Research 2" class="banner-bg-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <div class="image-placeholder" style="display: none;">Research Image 2</div>
           </div>
           <div class="banner-slide">
-            <img src="images/research3.png" alt="Research 3" class="banner-bg-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <img src="images/research3.png" alt="Research 3" class="banner-bg-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <div class="image-placeholder" style="display: none;">Research Image 3</div>
           </div>
           <div class="banner-slide">
-            <img src="images/research4.png" alt="Research 4" class="banner-bg-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <img src="images/research4.png" alt="Research 4" class="banner-bg-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <div class="image-placeholder" style="display: none;">Research Image 4</div>
           </div>
         </div>
@@ -128,24 +135,31 @@
       <div class="container">
         <h2 data-aos="fade-up" data-aos-delay="100">Latest News</h2>
         <div class="news-list">
-          <article class="news-item-text" data-aos="fade-up" data-aos-delay="200" onclick="window.location.href='news.html'">
+          <article class="news-item-text" data-aos="fade-up" data-aos-delay="200"
+            onclick="window.location.href='news.html'">
             <h3>[Congratulation] 2025 한국 유전체 학회 우수포스터상 수상</h3>
-            <p><strong>Eunyoung Seo, Sejung Lee</strong> awarded the Best Poster Prize at the 2025 Korean Genome Conference.</p>
+            <p><strong>Eunyoung Seo, Sejung Lee</strong> awarded the Best Poster Prize at the 2025 Korean Genome
+              Conference.</p>
             <span class="date">2025.09.06</span>
           </article>
-          <article class="news-item-text" data-aos="fade-up" data-aos-delay="300" onclick="window.location.href='news.html'">
+          <article class="news-item-text" data-aos="fade-up" data-aos-delay="300"
+            onclick="window.location.href='news.html'">
             <h3>[Congratulation] 2025 보건장학회 연구 지원 장학생 선정</h3>
             <p><strong>Eunyoung Seo</strong> selected for the Health Scholarship Foundation Scholarship.</p>
             <span class="date">2025.07.25</span>
           </article>
-          <article class="news-item-text" data-aos="fade-up" data-aos-delay="400" onclick="window.location.href='news.html'">
+          <article class="news-item-text" data-aos="fade-up" data-aos-delay="400"
+            onclick="window.location.href='news.html'">
             <h3>[Congratulation] 대학원 대통령 과학 장학생 선정</h3>
-            <p><strong>Sejung Lee</strong> selected for the students of Presidential Science Fellow for Graduate Studies.</p>
+            <p><strong>Sejung Lee</strong> selected for the students of Presidential Science Fellow for Graduate
+              Studies.</p>
             <span class="date">2025.06.05</span>
           </article>
-          <article class="news-item-text" data-aos="fade-up" data-aos-delay="500" onclick="window.location.href='news.html'">
+          <article class="news-item-text" data-aos="fade-up" data-aos-delay="500"
+            onclick="window.location.href='news.html'">
             <h3>[Congratulation] 한국연구재단-과학기술분야 기초연구사업-우수신진연구 과제 선정</h3>
-            <p><strong>Prof. Jinhyuk Bhin</strong> selected for the National Research Foundation of Korea - Basic Research Projects in Science and Technology - Outstanding New Research Project.</p>
+            <p><strong>Prof. Jinhyuk Bhin</strong> selected for the National Research Foundation of Korea - Basic
+              Research Projects in Science and Technology - Outstanding New Research Project.</p>
             <span class="date">2024.04.24</span>
           </article>
         </div>
@@ -157,25 +171,31 @@
       <div class="container">
         <h2 data-aos="fade-up" data-aos-delay="100">CGI Life</h2>
         <div class="today-grid">
-          <div class="today-item" data-aos="fade-up" data-aos-delay="200" onclick="window.location.href='lablife.html'">
+          <div class="today-item" data-aos="fade-up" data-aos-delay="200"
+            onclick="window.location.href='galleries.html'">
             <div class="today-image">
-              <img src="images/events/250904.jpg" alt="2025 한국유전체학회 KOGO" class="today-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <img src="images/events/250904.jpg" alt="2025 한국유전체학회 KOGO" class="today-img"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
               <div class="image-placeholder" style="display: none;">2025 한국유전체학회 KOGO</div>
             </div>
             <h3>2025 한국유전체학회 KOGO</h3>
             <span class="date">2025.09.04</span>
           </div>
-          <div class="today-item" data-aos="fade-up" data-aos-delay="300" onclick="window.location.href='lablife.html'">
+          <div class="today-item" data-aos="fade-up" data-aos-delay="300"
+            onclick="window.location.href='galleries.html'">
             <div class="today-image">
-              <img src="images/events/250509.png" alt="스승의 날" class="today-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <img src="images/events/250509.png" alt="스승의 날" class="today-img"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
               <div class="image-placeholder" style="display: none;">스승의 날</div>
             </div>
             <h3>스승의 날</h3>
             <span class="date">2025.05.09</span>
           </div>
-          <div class="today-item" data-aos="fade-up" data-aos-delay="400" onclick="window.location.href='lablife.html'">
+          <div class="today-item" data-aos="fade-up" data-aos-delay="400"
+            onclick="window.location.href='galleries.html'">
             <div class="today-image">
-              <img src="images/events/241220.png" alt="송년회" class="today-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <img src="images/events/241220.png" alt="송년회" class="today-img"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
               <div class="image-placeholder" style="display: none;">송년회</div>
             </div>
             <h3>송년회</h3>
@@ -211,87 +231,87 @@
         </div>
       </div>
       <div class="footer-bottom" data-aos="fade-up" data-aos-delay="400">
-        <p>&copy; 2025 Website developed by Sejung. Logo designed by Eunyoung. All rights reserved.</p>
+        <p>&copy; 2025 Website developed by Sejung. Logo designed by Hyeonjin. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-    <!-- 로딩 스크립트 -->
-    <script>
-        (function() {
-            const loadingOverlay = document.getElementById('loadingOverlay');
-            const siteHeader = document.querySelector('.site-header');
-            const skipLoading = sessionStorage.getItem('skipIndexLoading') === 'true';
+  <!-- 로딩 스크립트 -->
+  <script>
+    (function () {
+      const loadingOverlay = document.getElementById('loadingOverlay');
+      const siteHeader = document.querySelector('.site-header');
+      const skipLoading = sessionStorage.getItem('skipIndexLoading') === 'true';
 
-            if (skipLoading) {
-                sessionStorage.removeItem('skipIndexLoading');
-                if (siteHeader) {
-                    siteHeader.classList.add('show');
-                }
-                if (loadingOverlay) {
-                    loadingOverlay.style.display = 'none';
-                }
-                return;
-            }
+      if (skipLoading) {
+        sessionStorage.removeItem('skipIndexLoading');
+        if (siteHeader) {
+          siteHeader.classList.add('show');
+        }
+        if (loadingOverlay) {
+          loadingOverlay.style.display = 'none';
+        }
+        return;
+      }
 
-            // 페이지 로드 완료 후 로딩 오버레이 숨김
-            window.addEventListener('load', function() {
-                if (!loadingOverlay || !siteHeader) return;
+      // 페이지 로드 완료 후 로딩 오버레이 숨김
+      window.addEventListener('load', function () {
+        if (!loadingOverlay || !siteHeader) return;
 
-                setTimeout(function() {
-                    // 줌인 애니메이션 시작
-                    loadingOverlay.classList.add('zoom-out');
-                    
-                    // 헤더 표시 (로딩 시작과 동시에)
-                    siteHeader.classList.add('show');
-                    
-                    // 애니메이션 완료 후 오버레이 완전히 숨김
-                    setTimeout(function() {
-                        loadingOverlay.style.display = 'none';
-                    }, 1000); // 줌아웃 애니메이션 1초 후 숨김
-                }, 2000); // 초기 로딩 2초
-            });
-        })();
-    </script>
-    
-    <!-- AOS 라이브러리 스크립트 -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // AOS 초기화
-        AOS.init({
-            duration: 800,
-            easing: 'ease-out',
-            once: true,
-            offset: 100,
-            delay: 0,
-            anchorPlacement: 'top-bottom'
-        });
-        
-        // 현재 페이지 메뉴 활성화
-        document.addEventListener('DOMContentLoaded', function() {
-            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-            const menuLinks = document.querySelectorAll('.main-nav a');
-            
-            menuLinks.forEach(link => {
-                const href = link.getAttribute('href');
-                if (href === currentPage || (currentPage === 'index.html' && href === 'index.html')) {
-                    link.classList.add('active');
-                }
-            });
-        });
+        setTimeout(function () {
+          // 줌인 애니메이션 시작
+          loadingOverlay.classList.add('zoom-out');
 
-        // 메인 배너 슬라이더 + 설명 동기화
-        let currentBannerIndex = 0;
-        const bannerSlides = document.querySelectorAll('.banner-slide');
-        const bannerDots = document.querySelectorAll('.banner-dot');
-        const bannerDescTitle = document.getElementById('bannerDescTitle');
-        const bannerDescText = document.getElementById('bannerDescText');
-        let bannerInterval;
+          // 헤더 표시 (로딩 시작과 동시에)
+          siteHeader.classList.add('show');
 
-        const bannerDescriptions = [
-          {
-            title: '<strong>Truncated FGFR2 is a clinically actionable oncogene in multiple cancers</strong>',
-            text: `
+          // 애니메이션 완료 후 오버레이 완전히 숨김
+          setTimeout(function () {
+            loadingOverlay.style.display = 'none';
+          }, 1000); // 줌아웃 애니메이션 1초 후 숨김
+        }, 2000); // 초기 로딩 2초
+      });
+    })();
+  </script>
+
+  <!-- AOS 라이브러리 스크립트 -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // AOS 초기화
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out',
+      once: true,
+      offset: 100,
+      delay: 0,
+      anchorPlacement: 'top-bottom'
+    });
+
+    // 현재 페이지 메뉴 활성화
+    document.addEventListener('DOMContentLoaded', function () {
+      const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+      const menuLinks = document.querySelectorAll('.main-nav a');
+
+      menuLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPage || (currentPage === 'index.html' && href === 'index.html')) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // 메인 배너 슬라이더 + 설명 동기화
+    let currentBannerIndex = 0;
+    const bannerSlides = document.querySelectorAll('.banner-slide');
+    const bannerDots = document.querySelectorAll('.banner-dot');
+    const bannerDescTitle = document.getElementById('bannerDescTitle');
+    const bannerDescText = document.getElementById('bannerDescText');
+    let bannerInterval;
+
+    const bannerDescriptions = [
+      {
+        title: '<strong>Truncated FGFR2 is a clinically actionable oncogene in multiple cancers</strong>',
+        text: `
               <div style="color: #ffffff; line-height: 1.7;">
                 <a href="https://www.nature.com/articles/s41586-022-05066-5" 
                   target="_blank" 
@@ -318,10 +338,10 @@
                 </div>
               </div>
             `
-          },
-          { 
-            title: '<strong>Proteogenomic Characterization of Human Early-Onset Gastric Cancer</strong>', 
-            text: `
+      },
+      {
+        title: '<strong>Proteogenomic Characterization of Human Early-Onset Gastric Cancer</strong>',
+        text: `
               <div style="color: #ffffff; line-height: 1.7;">
                 <a href="https://www.sciencedirect.com/science/article/pii/S1535610818305749?via%3Dihub" 
                   target="_blank" 
@@ -334,10 +354,10 @@
                 </div>
               </div>
             `
-          },
-          { 
-            title: '<strong>MYC is a clinically significant driver of mTOR inhibitor resistance in breast cancer</strong>', 
-            text: `
+      },
+      {
+        title: '<strong>MYC is a clinically significant driver of mTOR inhibitor resistance in breast cancer</strong>',
+        text: `
               <div style="color: #ffffff; line-height: 1.7;">
                 <a href="https://rupress.org/jem/article/220/11/e20211743/276218" 
                   target="_blank" 
@@ -350,10 +370,10 @@
                 </div>
               </div>
             `
-          },
-          { 
-            title: '<strong>Multi-omics analysis reveals distinct non-reversion mechanisms of PARPi resistance in BRCA1- versus BRCA2-deficient mammary tumors</strong>', 
-            text: `
+      },
+      {
+        title: '<strong>Multi-omics analysis reveals distinct non-reversion mechanisms of PARPi resistance in BRCA1- versus BRCA2-deficient mammary tumors</strong>',
+        text: `
               <div style="color: #ffffff; line-height: 1.7;">
                 <a href="https://www.sciencedirect.com/science/article/pii/S2211124723005491?via%3Dihub" 
                   target="_blank" 
@@ -366,101 +386,102 @@
                 </div>
               </div>
             `
-          }
-        ];
+      }
+    ];
 
-        function updateBannerDescription(index) {
-          const { title, text } = bannerDescriptions[index] || bannerDescriptions[0];
-          
-          // 텍스트 페이드 아웃
-          bannerDescTitle.style.opacity = '0';
-          bannerDescText.style.opacity = '0';
-          
-          // 500ms 후 텍스트 변경하고 페이드 인
-          setTimeout(() => {
-            bannerDescTitle.innerHTML = title;
-            bannerDescText.innerHTML = text;
-            // 제목이 비어있으면 숨김
-            if (!title || title.trim() === '') {
-              bannerDescTitle.style.display = 'none';
-            } else {
-              bannerDescTitle.style.display = 'block';
-            }
-            bannerDescTitle.style.opacity = '1';
-            bannerDescText.style.opacity = '1';
-          }, 500);
+    function updateBannerDescription(index) {
+      const { title, text } = bannerDescriptions[index] || bannerDescriptions[0];
+
+      // 텍스트 페이드 아웃
+      bannerDescTitle.style.opacity = '0';
+      bannerDescText.style.opacity = '0';
+
+      // 500ms 후 텍스트 변경하고 페이드 인
+      setTimeout(() => {
+        bannerDescTitle.innerHTML = title;
+        bannerDescText.innerHTML = text;
+        // 제목이 비어있으면 숨김
+        if (!title || title.trim() === '') {
+          bannerDescTitle.style.display = 'none';
+        } else {
+          bannerDescTitle.style.display = 'block';
         }
+        bannerDescTitle.style.opacity = '1';
+        bannerDescText.style.opacity = '1';
+      }, 500);
+    }
 
-        function showBannerSlide(index) {
-            bannerSlides.forEach(slide => slide.classList.remove('active'));
-            bannerDots.forEach(dot => dot.classList.remove('active'));
-            bannerSlides[index].classList.add('active');
-            bannerDots[index].classList.add('active');
-            updateBannerDescription(index);
-        }
+    function showBannerSlide(index) {
+      bannerSlides.forEach(slide => slide.classList.remove('active'));
+      bannerDots.forEach(dot => dot.classList.remove('active'));
+      bannerSlides[index].classList.add('active');
+      bannerDots[index].classList.add('active');
+      updateBannerDescription(index);
+    }
 
-        function currentBannerSlide(index) {
-            currentBannerIndex = index - 1;
-            showBannerSlide(currentBannerIndex);
-            resetBannerTimer();
-        }
+    function currentBannerSlide(index) {
+      currentBannerIndex = index - 1;
+      showBannerSlide(currentBannerIndex);
+      resetBannerTimer();
+    }
 
-        function resetBannerTimer() {
-            clearInterval(bannerInterval);
-            startBannerTimer();
-        }
+    function resetBannerTimer() {
+      clearInterval(bannerInterval);
+      startBannerTimer();
+    }
 
-        function startBannerTimer() {
-            bannerInterval = setInterval(() => {
-                currentBannerIndex = (currentBannerIndex + 1) % bannerSlides.length;
-                showBannerSlide(currentBannerIndex);
-            }, 8000);
-        }
+    function startBannerTimer() {
+      bannerInterval = setInterval(() => {
+        currentBannerIndex = (currentBannerIndex + 1) % bannerSlides.length;
+        showBannerSlide(currentBannerIndex);
+      }, 8000);
+    }
 
-        document.addEventListener('DOMContentLoaded', function() {
-            // 초기 텍스트 설정
-            updateBannerDescription(0);
-            startBannerTimer();
-            const dots = document.querySelectorAll('.banner-dot');
-            dots.forEach((dot, idx) => {
-                dot.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    currentBannerSlide(idx + 1);
-                });
-            });
-
-            // 모바일 메뉴 토글 기능
-            const mobileToggle = document.querySelector('.mobile-menu-toggle');
-            const mobileDropdown = document.querySelector('.mobile-dropdown');
-            if (mobileToggle && mobileDropdown) {
-                mobileToggle.addEventListener('click', function() {
-                    mobileDropdown.classList.toggle('active');
-                });
-                document.addEventListener('click', function(e) {
-                    if (!mobileToggle.contains(e.target) && !mobileDropdown.contains(e.target)) {
-                        mobileDropdown.classList.remove('active');
-                    }
-                });
-            }
-
-            // 스크롤 시 헤더 배경색 변경
-            const siteHeader = document.querySelector('.site-header');
-            let lastScrollTop = 0;
-            
-            window.addEventListener('scroll', function() {
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                
-                // 스크롤이 50px 이상 내려갔을 때 배경색 추가
-                if (scrollTop > 50) {
-                    siteHeader.classList.add('scrolled');
-                } else {
-                    siteHeader.classList.remove('scrolled');
-                }
-                
-                lastScrollTop = scrollTop;
-            });
+    document.addEventListener('DOMContentLoaded', function () {
+      // 초기 텍스트 설정
+      updateBannerDescription(0);
+      startBannerTimer();
+      const dots = document.querySelectorAll('.banner-dot');
+      dots.forEach((dot, idx) => {
+        dot.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          currentBannerSlide(idx + 1);
         });
-    </script>
+      });
+
+      // 모바일 메뉴 토글 기능
+      const mobileToggle = document.querySelector('.mobile-menu-toggle');
+      const mobileDropdown = document.querySelector('.mobile-dropdown');
+      if (mobileToggle && mobileDropdown) {
+        mobileToggle.addEventListener('click', function () {
+          mobileDropdown.classList.toggle('active');
+        });
+        document.addEventListener('click', function (e) {
+          if (!mobileToggle.contains(e.target) && !mobileDropdown.contains(e.target)) {
+            mobileDropdown.classList.remove('active');
+          }
+        });
+      }
+
+      // 스크롤 시 헤더 배경색 변경
+      const siteHeader = document.querySelector('.site-header');
+      let lastScrollTop = 0;
+
+      window.addEventListener('scroll', function () {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // 스크롤이 50px 이상 내려갔을 때 배경색 추가
+        if (scrollTop > 50) {
+          siteHeader.classList.add('scrolled');
+        } else {
+          siteHeader.classList.remove('scrolled');
+        }
+
+        lastScrollTop = scrollTop;
+      });
+    });
+  </script>
 </body>
+
 </html>
