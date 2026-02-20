@@ -166,42 +166,11 @@
       </div>
     </section>
 
-    <!--  CGI Life 섹션 (동일) -->
+    <!--  CGI Life: first 3 items from galleries data (see js/galleries-data.js) -->
     <section id="CGI-today" class="CGI-today-section" data-aos="fade-up">
       <div class="container">
         <h2 data-aos="fade-up" data-aos-delay="100">CGI Life</h2>
-        <div class="today-grid">
-          <div class="today-item" data-aos="fade-up" data-aos-delay="200"
-            onclick="window.location.href='galleries.html'">
-            <div class="today-image">
-              <img src="images/events/250904.jpg" alt="2025 한국유전체학회 KOGO" class="today-img"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div class="image-placeholder" style="display: none;">2025 한국유전체학회 KOGO</div>
-            </div>
-            <h3>2025 한국유전체학회 KOGO</h3>
-            <span class="date">2025.09.04</span>
-          </div>
-          <div class="today-item" data-aos="fade-up" data-aos-delay="300"
-            onclick="window.location.href='galleries.html'">
-            <div class="today-image">
-              <img src="images/events/250509.png" alt="스승의 날" class="today-img"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div class="image-placeholder" style="display: none;">스승의 날</div>
-            </div>
-            <h3>스승의 날</h3>
-            <span class="date">2025.05.09</span>
-          </div>
-          <div class="today-item" data-aos="fade-up" data-aos-delay="400"
-            onclick="window.location.href='galleries.html'">
-            <div class="today-image">
-              <img src="images/events/241220.png" alt="송년회" class="today-img"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div class="image-placeholder" style="display: none;">송년회</div>
-            </div>
-            <h3>송년회</h3>
-            <span class="date">2024.12.20</span>
-          </div>
-        </div>
+        <div class="today-grid" id="cgiLifeGrid"></div>
       </div>
     </section>
   </main>
@@ -274,6 +243,8 @@
     })();
   </script>
 
+  <!-- Galleries data (single source: index shows first 3, galleries uses full list) -->
+  <script src="js/galleries-data.js"></script>
   <!-- AOS 라이브러리 스크립트 -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
@@ -438,6 +409,31 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
+      // CGI Life: render first 3 from galleries data
+      var grid = document.getElementById('cgiLifeGrid');
+      if (grid && window.GALLERIES_DATA && window.GALLERIES_DATA.length > 0) {
+        var items = window.GALLERIES_DATA.slice(0, 3);
+        var delays = [200, 300, 400];
+        items.forEach(function (ev, i) {
+          var thumb = ev.images && ev.images[0] ? ev.images[0] : '';
+          var title = ev.title || '';
+          var date = ev.date || '';
+          var div = document.createElement('div');
+          div.className = 'today-item';
+          div.setAttribute('data-aos', 'fade-up');
+          div.setAttribute('data-aos-delay', delays[i]);
+          div.onclick = function () { window.location.href = 'galleries.html'; };
+          div.innerHTML =
+            '<div class="today-image">' +
+              '<img src="' + thumb + '" alt="' + title.replace(/"/g, '&quot;') + '" class="today-img" onerror="this.style.display=\'none\'; if(this.nextElementSibling) this.nextElementSibling.style.display=\'flex\';">' +
+              '<div class="image-placeholder" style="display: none;">' + title.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>' +
+            '</div>' +
+            '<h3>' + title.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</h3>' +
+            '<span class="date">' + date.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</span>';
+          grid.appendChild(div);
+        });
+      }
+
       // 초기 텍스트 설정
       updateBannerDescription(0);
       startBannerTimer();
