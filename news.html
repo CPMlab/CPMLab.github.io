@@ -77,51 +77,7 @@
             <!-- 최신 뉴스 섹션 -->
             <section>
                 <h2>Latest News</h2>
-                <div class="latest-news">
-
-                    <div class="news-item">
-                      <h3>[Congratulation] 2026년도 바이오·의료기술개발사업 첨단바이오 연구교류 프로그램 선정 (KOBRA-ES)</h3>
-                      <p><span class="bhin-name">Jebin Lee</span> selected for the 2026 International Research Exchange Program (KOBRA-ES).</p>
-                      <span class="date">2026.05.11</span>
-                    </div>
-
-                    <div class="news-item">
-                      <h3>[Congratulation] 2025 한국 유전체 학회 우수포스터상 수상</h3>
-                      <p><span class="bhin-name">Eunyoung Seo,Sejung Lee</span> awarded the Best Poster Prize at the 2025 Korean Genome Conference.</p>
-                      <span class="date">2025.09.06</span>
-                    </div>
-
-                    <div class="news-item">
-                      <h3>[Congratulation] 2025 보건장학회 연구 지원 장학생 선정</h3>
-                      <p><span class="bhin-name">Eunyoung Seo</span> selected for  the Health Scholarship Foundation Scholarship.</p>
-                      <span class="date">2025.07.25</span>
-                    </div>
-
-                    <div class="news-item">
-                        <h3>[Congratulation] 대학원 대통령 과학 장학생 선정</h3>
-                        <p><span class="bhin-name">Sejung Lee </span> selected for the students of Presidential Science Fellow for Graduate Studies.</p>
-                        <span class="date">2025.06.05</span>
-                    </div>
-
-                    <div class="news-item">
-                        <h3>[Congratulation] 한국연구재단 사업단 선정-기초의과학연구센터(MRC) 2024</h3>
-                        <p><span class="bhin-name">Prof. Jinhyuk Bhin</span> selected as a National Research Foundation of Korea Project - Basic Medical Research Center (MRC)</p>
-                        <span class="date">2024~</span>
-                    </div>
-                    
-                    <div class="news-item">
-                        <h3>[Congratulation] 한국연구재단-학문후속세대지원-석사과정생연구장려금지원사업 과제 선정</h3>
-                        <p><span class="bhin-name">Se Jung Lee</span> selected for the National Research Foundation of Korea-Support for the Next Generation of Scholars-Graduate Student Research Fellowship Program</p>
-                        <span class="date">2024.09.01</span>
-                    </div>
-                    
-                    <div class="news-item">
-                        <h3>[Congratulation] 한국연구재단-과학기술분야 기초연구사업-우수신진연구 과제 선정</h3>
-                        <p><span class="bhin-name">Prof. Jinhyuk Bhin</span> selected for the National Research Foundation of Korea - Basic Research Projects in Science and Technology - Outstanding New Research Project.</p>
-                        <span class="date">2024.04.24</span>
-                    </div>
-                    
-                </div>
+                <div class="latest-news" id="newsListMount"></div>
             </section>
         </div>
     </main>
@@ -155,6 +111,15 @@
             </div>
         </div>
     </footer>
+    <script src="js/news-data.js"></script>
+    <script>
+      (function () {
+        var el = document.getElementById('newsListMount');
+        if (el && window.fillNewsListPage) {
+          window.fillNewsListPage(el);
+        }
+      })();
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({ duration: 800, easing: 'ease-out', once: true, offset: 100 });
