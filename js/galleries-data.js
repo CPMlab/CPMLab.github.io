@@ -4,6 +4,7 @@
  * Add new events at the top of the array to update both pages.
  */
 window.GALLERIES_DATA = [
+  { title: "Teachers' Day", date: "2026.05.15", images: ["images/events/260515_1.jpg", "images/events/260515_2.jpg"] },
   { title: "2026 KOGO", date: "2026.02.04~06", images: ["images/events/2026_KOGO_2.jpg", "images/events/2026_KOGO_1.jpg"] },
   { title: "Songnyeonhoe", date: "2025.12.17", images: ["images/events/20260107.jpg"] },
   { title: "2025 Korean Genome Conference KOGO", date: "2025.09.04", images: ["images/events/250904_2.jpg", "images/events/250904.png"] },
