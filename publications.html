@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="style.css?v=2025012808">
+    <link rel="stylesheet" href="style.css?v=2025052901">
     <link rel="stylesheet" href="subpage.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
         rel="stylesheet">
@@ -429,21 +429,11 @@
                 });
             }
 
-            // 스크롤 시 헤더 배경 처리
-            const siteHeader = document.querySelector('.site-header');
-            if (siteHeader) {
-                const handleScroll = () => {
-                    if (window.scrollY > 50) {
-                        siteHeader.classList.add('scrolled');
-                    } else {
-                        siteHeader.classList.remove('scrolled');
-                    }
-                };
-                handleScroll();
-                window.addEventListener('scroll', handleScroll);
-            }
         });
     </script>
+    <script src="js/publications-data.js"></script>
+    <script src="js/publications-links.js"></script>
+    <script src="js/site-scroll.js"></script>
 </body>
 
 </html>

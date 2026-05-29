@@ -545,10 +545,6 @@
     height: 380px; /* 태블릿에서 적당한 지도 높이 */
   }
   
-  /* Alumni 섹션 태블릿 반응형 */
-  .alumni-section {
-    grid-template-columns: repeat(3, 1fr); /* 태블릿에서 3열 */
-  }
 }
 
 @media (max-width: 768px) {
@@ -657,14 +653,13 @@
     height: 150px;
   }
   
-  /* Alumni 섹션 모바일 반응형 */
-  .alumni-section {
-    grid-template-columns: repeat(2, 1fr); /* 모바일에서 2열 */
-    gap: 0.8rem;
+  .alumni-columns {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
-  
-  .alumni-section h2 {
-    font-size: 1.5rem; /* 모바일에서 제목 크기 축소 */
+
+  .alumni-column h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -690,14 +685,8 @@
     padding: 1.5rem;                          /* 더 작은 내부 여백 */
   }
   
-  /* Alumni 섹션 작은 모바일 반응형 */
-  .alumni-section {
-    grid-template-columns: 1fr; /* 작은 모바일에서 1열 */
-    gap: 1rem;
-  }
-  
-  .alumni-section h2 {
-    font-size: 1.3rem; /* 더 작은 제목 크기 */
+  .alumni-column h2 {
+    font-size: 1.3rem;
   }
 }
 
@@ -921,6 +910,15 @@
     transform: translateY(-6px);
     border-color: rgba(255, 255, 255, 0.18);
     box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
+}
+
+.paper-item--linked {
+    cursor: pointer;
+}
+
+.paper-item--linked:focus-visible {
+    outline: 2px solid rgba(112, 210, 211, 0.9);
+    outline-offset: 3px;
 }
 
 .paper-item::before {
@@ -1215,35 +1213,42 @@
     }
 }
 
-/* Alumni 제목 스타일 */
-.alumni-section h2 {
+/* Alumni 섹션: 좌 Alumni / 우 Undergraduate Intern */
+.alumni-section {
     margin-top: 3rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    font-size: 1.8rem; /* 2.5rem에서 1.8rem으로 축소 */
-    color: #ffffff;
-    position: relative;
-    grid-column: 1 / -1; /* 그리드 전체 폭 차지 */
 }
 
-.alumni-section h2::after {
+.alumni-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.subpage-content .alumni-column h2 {
+    margin-bottom: 1.5rem;
+    text-align: left;
+    font-size: 1.8rem;
+    color: #ffffff;
+    position: relative;
+}
+
+.subpage-content .alumni-column h2::after {
     content: '';
     position: absolute;
     bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px; /* 80px에서 60px로 축소 */
-    height: 3px; /* 4px에서 3px로 축소 */
-    background: linear-gradient(90deg, rgba(120, 120, 120, 0.6), rgba(160, 160, 160, 0.6)); /* 투명도도 낮춤 */
+    left: 0;
+    transform: none;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(120, 120, 120, 0.6), rgba(160, 160, 160, 0.6));
     border-radius: 2px;
 }
 
-/* Alumni 섹션 5열 그리드 배치 */
-.alumni-section {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 0.6rem;
-    align-items: start;
+.alumni-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 /* Alumni 멤버 카드 스타일 */

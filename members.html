@@ -716,36 +716,6 @@
 
 
 
-                <div class="member-card">
-
-                    <div class="member-photo">
-
-
-                        <img src="images/sumin.jpg" alt="Sumin Shin" class="member-img"
-                            onerror="this.style.display='none';">
-
-
-                    </div>
-
-                    <div class="member-info">
-
-
-                        <h3>신수민 / Sumin Shin <span class="email">(alicessm@naver.com)</span></h3>
-
-                        <h4>EDUCATION</h4>
-
-                        <p>2026.01 - Undergraduate Research Intern</p>
-
-                        <p class="project">Project: Multi-omics analysis of treatment-induced tumor microenvironment
-                            remodeling in gastric cancer</p>
-
-                        <p>2021.3 - B.S. Student, Division of Life Sciences, Ewha Womans University</p>
-
-
-                    </div>
-
-                </div>
-
             </section>
 
 
@@ -756,104 +726,47 @@
 
 
         <section class="alumni-section">
-
-
-            <h2>Alumni</h2>
-
-
-
-
-
-
-
-
-            <div class="alumni-card">
-
-
-                <div class="member-info">
-
-
-                    <h3>박수연 / Sooyeon Park </h3>
-
-
+            <div class="alumni-columns">
+                <div class="alumni-column">
+                    <h2>Alumni</h2>
+                    <div class="alumni-list"></div>
                 </div>
-
-
-            </div>
-
-
-
-
-
-            <div class="alumni-card">
-
-
-                <div class="member-info">
-
-
-                    <h3>박소윤 / Soyoon Park </h3>
-
-
+                <div class="alumni-column">
+                    <h2>Undergraduate Internship</h2>
+                    <div class="alumni-list">
+                        <div class="alumni-card">
+                            <div class="member-info">
+                                <h3>박수연 / Sooyeon Park</h3>
+                            </div>
+                        </div>
+                        <div class="alumni-card">
+                            <div class="member-info">
+                                <h3>박소윤 / Soyoon Park</h3>
+                            </div>
+                        </div>
+                        <div class="alumni-card">
+                            <div class="member-info">
+                                <h3>조승원 / Seungwon Cho</h3>
+                            </div>
+                        </div>
+                        <div class="alumni-card">
+                            <div class="member-info">
+                                <h3>배용준 / Yongjun Bae</h3>
+                            </div>
+                        </div>
+                        <div class="alumni-card">
+                            <div class="member-info">
+                                <h3>임재윤 / Jaeyoon Lim</h3>
+                            </div>
+                        </div>
+                        <div class="alumni-card">
+                            <div class="member-info">
+                                <h3>신수민 / Sumin Shin</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-
             </div>
-
-
-
-
-
-            <div class="alumni-card">
-
-
-                <div class="member-info">
-
-
-                    <h3>조승원 / Seungwon Cho </h3>
-
-
-                </div>
-
-
-            </div>
-
-
-
-
-
-            <div class="alumni-card">
-
-
-                <div class="member-info">
-
-
-                    <h3>배용준 / Yongjun Bae</h3>
-
-
-                </div>
-
-
-            </div>
-
-
-
-
-
-            <div class="alumni-card">
-
-
-                <div class="member-info">
-
-
-                    <h3>임재윤 / Jaeyoon Lim</h3>
-
-
-                </div>
-
-
-            </div>
-
-
         </section>
 
 
@@ -1028,26 +941,11 @@
             }
 
 
-            // 스크롤 시 헤더 배경 처리
-            const siteHeader = document.querySelector('.site-header');
-            if (siteHeader) {
-                const handleScroll = () => {
-                    if (window.scrollY > 50) {
-                        siteHeader.classList.add('scrolled');
-                    } else {
-                        siteHeader.classList.remove('scrolled');
-                    }
-                };
-                handleScroll();
-                window.addEventListener('scroll', handleScroll);
-            }
-
-
         });
 
 
     </script>
-
+    <script src="js/site-scroll.js"></script>
 
 </body>
 
