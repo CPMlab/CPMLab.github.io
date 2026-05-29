@@ -127,7 +127,14 @@
 .site-header {
   opacity: 1 !important;                    /* 헤더 즉시 표시 */
   visibility: visible !important;           /* 헤더 보이기 */
-  transition: none !important;              /* 전환 효과 제거 */
+  transition: background 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.site-header.scrolled {
+  background: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
 }
 
 /* ========================================
@@ -145,6 +152,8 @@
   border-radius: 20px;                         /* 모서리 둥글게 */
   box-shadow: none !important;                 /* 그림자 제거 강제 */
   border: none !important;                     /* 테두리 제거 강제 */
+  position: relative;
+  z-index: 1;
 }
 
 .page-header h1 {
@@ -165,6 +174,8 @@
 .subpage-content {
   max-width: 80%;                             /* 메인 페이지와 동일한 너비 */
   margin: 2rem auto;                          /* 중앙 정렬 */
+  position: relative;
+  z-index: 1;
 }
 
 .subpage-content .container {
@@ -174,7 +185,6 @@
 
 .subpage-content section {
   background: transparent;                     /* 배경 투명 */
-  backdrop-filter: none;                       /* 블러 제거 */
   border: none;                                /* 테두리 제거 */
   border-radius: 20px;                         /* 모서리 둥글게 유지 */
   padding: 3rem;                               /* 내부 여백 */
@@ -653,13 +663,30 @@
     height: 150px;
   }
   
-  .alumni-columns {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .alumni-section {
+    padding: 1.5rem 1rem 2rem !important;
   }
 
-  .alumni-column h2 {
-    font-size: 1.5rem;
+  .alumni-columns {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .alumni-columns:has(.alumni-column--alumni .alumni-list:not(:empty)) {
+    grid-template-columns: 1fr;
+  }
+
+  .subpage-content .alumni-section .alumni-column h2 {
+    font-size: 1.45rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .alumni-card {
+    padding: 0.5rem 0;
+  }
+
+  .alumni-card .member-info h3 {
+    font-size: 0.95rem;
   }
 }
 
@@ -685,8 +712,14 @@
     padding: 1.5rem;                          /* 더 작은 내부 여백 */
   }
   
-  .alumni-column h2 {
-    font-size: 1.3rem;
+  .subpage-content .alumni-section .alumni-column h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .alumni-columns:has(.alumni-column--alumni .alumni-list:not(:empty)) {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -707,6 +740,8 @@
   padding: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .research-area-item:hover {
@@ -788,6 +823,8 @@
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .project-item:hover {
@@ -1215,7 +1252,10 @@
 
 /* Alumni 섹션: 좌 Alumni / 우 Undergraduate Intern */
 .alumni-section {
-    margin-top: 3rem;
+    margin-top: 0;
+    padding-top: 1rem !important;
+    padding-bottom: 2rem !important;
+    text-align: left;
 }
 
 .alumni-columns {
@@ -1223,21 +1263,36 @@
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
     align-items: start;
+    width: 100%;
 }
 
-.subpage-content .alumni-column h2 {
-    margin-bottom: 1.5rem;
+/* Alumni 목록이 비어 있으면 해당 열 숨김 */
+.alumni-column--alumni:has(.alumni-list:empty) {
+    display: none;
+}
+
+.alumni-columns:has(.alumni-column--alumni .alumni-list:empty) {
+    grid-template-columns: 1fr;
+}
+
+.subpage-content .alumni-section .alumni-column h2 {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 1.75rem;
     text-align: left;
     font-size: 1.8rem;
     color: #ffffff;
     position: relative;
 }
 
-.subpage-content .alumni-column h2::after {
+.subpage-content .alumni-section .alumni-column h2::after {
     content: '';
     position: absolute;
     bottom: -10px;
     left: 0;
+    right: auto;
     transform: none;
     width: 60px;
     height: 3px;
@@ -1245,10 +1300,17 @@
     border-radius: 2px;
 }
 
+.alumni-column {
+    text-align: left;
+    min-width: 0;
+}
+
 .alumni-list {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.35rem;
+    width: 100%;
+    align-items: stretch;
 }
 
 /* Alumni 멤버 카드 스타일 */

@@ -13,6 +13,7 @@
     var progress = fadeDistance > 0 ? Math.min(scrollTop / fadeDistance, 1) : 0;
     var opacity = BG_OPACITY_START - (BG_OPACITY_START - BG_OPACITY_MIN) * progress;
     document.documentElement.style.setProperty('--bg-scroll-opacity', String(opacity));
+    document.body.style.setProperty('--bg-scroll-opacity', String(opacity));
   }
 
   function updateHeaderScroll() {
