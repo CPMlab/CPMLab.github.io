@@ -320,6 +320,16 @@
   transition: transform 0.3s ease;            /* 부드러운 전환 */
 }
 
+.members-list .member-photo--empty::before {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 240px;
+  border: 1px dashed rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
 .member-img.pi-img {
   width: 220px;                               /* PI 이미지 가로는 좁게 */
   height: 320px;                              /* PI 이미지 세로는 더 크게 */
@@ -660,6 +670,11 @@
   
   .member-img {
     width: 150px;                             /* 모바일에서 이미지 크기 줄임 */
+    height: 150px;
+  }
+
+  .members-list .member-photo--empty::before {
+    width: 150px;
     height: 150px;
   }
   
