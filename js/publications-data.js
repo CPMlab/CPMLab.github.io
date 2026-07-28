@@ -1,7 +1,10 @@
 /** Publication URLs in same order as .paper-item elements on publications.html */
 window.PUBLICATION_URLS = [
-  'https://doi.org/10.1016/j.mocell.2025.100272',
+  'https://febs.onlinelibrary.wiley.com/doi/10.1002/1878-0261.70302',
+  'https://aacrjournals.org/cancerres/article/86/7_Supplement/3960/779689',
+  'https://aacrjournals.org/cancerres/article/86/7_Supplement/3531/781082',
   'https://pubmed.ncbi.nlm.nih.gov/41460723/',
+  'https://doi.org/10.1016/j.mocell.2025.100272',
   'https://pubmed.ncbi.nlm.nih.gov/40554806/',
   'https://pubmed.ncbi.nlm.nih.gov/40305101/',
   'https://rupress.org/jem/article/220/11/e20211743/276218',
