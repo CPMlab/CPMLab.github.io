@@ -109,6 +109,11 @@
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <div class="image-placeholder" style="display: none;">Research Image 4</div>
           </div>
+          <div class="banner-slide">
+            <img src="images/research5.png" alt="Research 5" class="banner-bg-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder" style="display: none;">Research Image 4</div>
+          </div>
         </div>
       </div>
       <div class="banner-right">
@@ -123,6 +128,7 @@
         <span class="banner-dot" onclick="currentBannerSlide(2)"></span>
         <span class="banner-dot" onclick="currentBannerSlide(3)"></span>
         <span class="banner-dot" onclick="currentBannerSlide(4)"></span>
+        <span class="banner-dot" onclick="currentBannerSlide(5)"></span>
       </div>
     </div>
   </section>
@@ -330,6 +336,22 @@
                 </div>
               </div>
             `
+      },
+      {
+        title: '<strong>Multi-omics analysis reveals distinct non-reversion mechanisms of PARPi resistance in BRCA1- versus BRCA2-deficient mammary tumors</strong>',
+        text: `
+              <div style="color: #ffffff; line-height: 1.7;">
+                <a href="https://www.sciencedirect.com/science/article/pii/S2211124723005491?via%3Dihub" 
+                  target="_blank" 
+                  style="color: #ffffff; text-decoration: underline; font-size: 0.95rem; display: block; margin-bottom: 1.5rem;">
+                  J. Bhin* and Dias* et al., <em>Cell Reports</em> (2023)
+                </a>
+
+                <div style="font-size: 0.9rem; line-height: 1.7; color: rgba(255, 255, 255, 0.9); text-align: justify; margin-top: 3rem;">
+                  BRCA1 and BRCA2 both function in DNA double-strand break repair by homologous recombination (HR). Due to their HR defect, BRCA1/2-deficient cancers are sensitive to poly(ADP-ribose) polymerase inhibitors (PARPis), but they eventually acquire resistance. Preclinical studies yielded several PARPi resistance mechanisms that do not involve BRCA1/2 reactivation, but their relevance in the clinic remains elusive. To investigate which BRCA1/2-independent mechanisms drive spontaneous resistance in vivo, we combine molecular profiling with functional analysis of HR of matched PARPi-naive and PARPi-resistant mouse mammary tumors harboring large intragenic deletions that prevent reactivation of BRCA1/2. We observe restoration of HR in 62% of PARPi-resistant BRCA1-deficient tumors but none in the PARPi-resistant BRCA2-deficient tumors. Moreover, we find that 53BP1 loss is the prevalent resistance mechanism in HR-proficient BRCA1-deficient tumors, whereas resistance in BRCA2-deficient tumors is mainly induced by PARG loss. Furthermore, combined multi-omics analysis identifies additional genes and pathways potentially involved in modulating PARPi response.
+                </div>
+              </div>
+            `
       }
     ];
 
@@ -378,7 +400,7 @@
       bannerInterval = setInterval(() => {
         currentBannerIndex = (currentBannerIndex + 1) % bannerSlides.length;
         showBannerSlide(currentBannerIndex);
-      }, 8000);
+      }, 4000);
     }
 
     document.addEventListener('DOMContentLoaded', function () {
