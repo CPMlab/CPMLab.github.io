@@ -102,6 +102,22 @@
   font-size: 0.95em;
 }
 
+/* 멤버 개인 홈페이지 링크
+   style.css의 전역 a { color/text-decoration ... !important } 대응 */
+.member-info .member-home {
+  color: #ffffff !important;
+  text-decoration-line: underline !important;
+  text-decoration-color: rgba(255, 255, 255, 0.35) !important;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.member-info .member-home:hover,
+.member-info .member-home:focus {
+  color: #ffffff !important;
+  text-decoration-color: #ffffff !important;
+}
+
 /* 더 구체적인 선택자로 우선순위 높임 */
 .members-list .member-card .member-info .project,
 .member-info .project {
