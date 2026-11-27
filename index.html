@@ -1,472 +1,237 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bhin lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <script>try{if(localStorage.getItem("color-scheme")==="light")document.querySelector('meta[name="color-scheme"]').content="light"}catch(e){}</script>
+  <title>Bhin Lab · Cancer Genomics & Intelligence · Yonsei University</title>
+  <meta name="description" content="Bhin Lab (Cancer Genomics &amp; Intelligence Laboratory) at Yonsei University College of Medicine uses computational analysis, multi-omics, single-cell and spatial technologies to design precision medicine strategies for cancer.">
+  <link rel="canonical" href="https://cgi.yonsei.ac.kr/">
+  <meta name="theme-color" content="#0a1122">
 
-  <!-- 파비콘 설정 -->
-  <link rel="icon" type="image/x-icon" href="images/logo_251125.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bhin Lab · Cancer Genomics &amp; Intelligence">
+  <meta property="og:title" content="Bhin Lab · Cancer Genomics & Intelligence · Yonsei University">
+  <meta property="og:description" content="Bhin Lab (Cancer Genomics &amp; Intelligence Laboratory) at Yonsei University College of Medicine uses computational analysis, multi-omics, single-cell and spatial technologies to design precision medicine strategies for cancer.">
+  <meta property="og:url" content="https://cgi.yonsei.ac.kr/">
+  <meta property="og:image" content="https://cgi.yonsei.ac.kr/images/brand/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="style.css?v=2025052901">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <!-- AOS 라이브러리 추가 -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/site.css?v=20261127w">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ResearchOrganization", "name": "Cancer Genomics & Intelligence Laboratory (Bhin Lab)", "alternateName": ["Bhin Lab", "CGI Lab"], "url": "https://cgi.yonsei.ac.kr/", "logo": "https://cgi.yonsei.ac.kr/images/brand/logo-512.png", "email": "jbhin@yuhs.ac", "parentOrganization": {"@type": "CollegeOrUniversity", "name": "Yonsei University College of Medicine"}, "address": {"@type": "PostalAddress", "streetAddress": "Room 107, 237 Dogok-ro", "addressLocality": "Gangnam-gu, Seoul", "addressCountry": "KR"}, "founder": {"@type": "Person", "name": "Jinhyuk Bhin", "jobTitle": "Assistant Professor"}, "sameAs": ["https://github.com/CPMlab"]}</script>
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- 로딩 오버레이 -->
-  <div class="loading-overlay" id="loadingOverlay">
-    <div class="loading-content">
-      <div class="logo-container">
-        <img src="images/logo_251125.png" alt="로고" class="loading-logo"
-          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-        <div class="logo-text" style="display: none;">Bhin lab</div>
-        <div class="logo-subtitle">Cancer Genomics & Intelligence</div>
-      </div>
-
-      <div class="loading-bar">
-        <div class="loading-progress"></div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- 헤더 -->
   <header class="site-header">
-    <div class="header-container">
-      <div class="logo">
-        <a href="index.html">
-          <img src="images/logo_251125.png" alt="로고" class="logo-image" onerror="this.style.display='none';">
-          <div>
-            <h1>Bhin lab</h1>
-            <p class="lab-subtitle">Cancer Genomics & Intelligence</p>
-          </div>
-        </a>
-      </div>
-      <nav class="main-nav">
-        <ul>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-current="page">
+        <img class="logo-for-light" src="images/brand/logo-96.png" alt="" width="40" height="40">
+        <img class="logo-for-dark" src="images/brand/logo-96-dark.png" alt="" width="40" height="40">
+        <span>
+          <span class="brand-name" translate="no">Bhin Lab</span>
+          <span class="brand-sub">Cancer Genomics &amp; Intelligence</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="menu-button" type="button" popovertarget="site-menu" aria-controls="site-menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span>
+        </button>
+        <ul id="site-menu" class="site-menu" popover="auto">
           <li><a href="research.html">Research</a></li>
           <li><a href="members.html">Members</a></li>
           <li><a href="publications.html">Publications</a></li>
           <li><a href="news.html">News</a></li>
+          <li><a href="galleries.html">Galleries</a></li>
           <li><a href="positions.html">Positions</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="galleries.html">Galleries</a></li>
         </ul>
       </nav>
-
-      <!-- 모바일 메뉴 버튼 -->
-      <div class="mobile-menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <!-- 모바일 드롭다운 메뉴 -->
-      <div class="mobile-dropdown">
-        <ul>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="members.html">Members</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="positions.html">Positions</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="galleries.html">Galleries</a></li>
-        </ul>
-      </div>
     </div>
   </header>
 
-  <!-- 메인 배너: 좌우 2열 그리드 (좌: 이미지 슬라이드, 우: 설명) -->
-  <section class="main-banner-container" data-aos="fade-up" data-aos-duration="1000">
-    <h2 class="banner-section-title" data-aos="fade-up" data-aos-delay="100">Research Highlights</h2>
-    <div class="main-banner-grid">
-      <div class="banner-left">
-        <div class="banner-slides" id="bannerSlider">
-          <div class="banner-slide active">
-            <img src="images/research1.png" alt="Research 1" class="banner-bg-img"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder" style="display: none;">Research Image 1</div>
-          </div>
-          <div class="banner-slide">
-            <img src="images/research2.png" alt="Research 2" class="banner-bg-img"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder" style="display: none;">Research Image 2</div>
-          </div>
-          <div class="banner-slide">
-            <img src="images/research3.png" alt="Research 3" class="banner-bg-img"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder" style="display: none;">Research Image 3</div>
-          </div>
-          <div class="banner-slide">
-            <img src="images/research4.png" alt="Research 4" class="banner-bg-img"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder" style="display: none;">Research Image 4</div>
-          </div>
-          <div class="banner-slide">
-            <img src="images/research5.png" alt="Research 5" class="banner-bg-img"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder" style="display: none;">Research Image 4</div>
-          </div>
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1>Computational cancer genomics for precision oncology</h1>
+          <p class="hero-lede">We combine computational and statistical analysis with multi-omics, single-cell and spatial technologies to design precision medicine strategies for cancer.</p>
+        </div>
+        <div class="genome">
+          <svg viewBox="-330 -330 660 660" role="img" aria-label="Circos-style plot of the human genome: chromosomes 1 to 22 and X around a ring, an inner ring of copy-number bars, and illustrative rearrangement links. Genes from our work are marked: FGFR3, MYC, FGFR2, BRCA2, CDH1, BRCA1."><g class="chr-group" data-chr="1"><path class="chr-hit" d="M0.0 -232.0A232 232 0 0 1 103.4 -207.7"/><path class="chr" d="M0.0 -232.0A232 232 0 0 1 103.4 -207.7" stroke="#f28b2e" pathLength="1" style="--len:1;--i:0"/><text class="chr-label" x="48.6" y="-206.4">1</text></g><g class="chr-group" data-chr="2"><path class="chr-hit" d="M109.2 -204.7A232 232 0 0 1 187.5 -136.6"/><path class="chr" d="M109.2 -204.7A232 232 0 0 1 187.5 -136.6" stroke="#f17a42" pathLength="1" style="--len:1;--i:1"/><text class="chr-label" x="139.1" y="-160.0">2</text></g><g class="chr-group" data-chr="3"><path class="chr-hit" d="M191.2 -131.3A232 232 0 0 1 225.7 -53.5"/><path class="chr" d="M191.2 -131.3A232 232 0 0 1 225.7 -53.5" stroke="#ef6b54" pathLength="1" style="--len:1;--i:2"/><text class="chr-label" x="193.8" y="-85.9">3</text></g><g class="chr-group" data-chr="4"><path class="chr-hit" d="M227.1 -47.2A232 232 0 0 1 229.4 34.5"/><path class="chr" d="M227.1 -47.2A232 232 0 0 1 229.4 34.5" stroke="#ee5d64" pathLength="1" style="--len:1;--i:3"/><text class="chr-label" x="211.9" y="-5.9">4</text></g><g class="chr-group" data-chr="5"><path class="chr-hit" d="M228.4 40.9A232 232 0 0 1 202.0 114.1"/><path class="chr" d="M228.4 40.9A232 232 0 0 1 202.0 114.1" stroke="#ed5074" pathLength="1" style="--len:1;--i:4"/><text class="chr-label" x="199.5" y="71.8">5</text></g><g class="chr-group" data-chr="6"><path class="chr-hit" d="M198.7 119.7A232 232 0 0 1 151.2 176.0"/><path class="chr" d="M198.7 119.7A232 232 0 0 1 151.2 176.0" stroke="#e44d84" pathLength="1" style="--len:1;--i:5"/><text class="chr-label" x="161.9" y="136.8">6</text></g><g class="chr-group" data-chr="7"><path class="chr-hit" d="M146.2 180.1A232 232 0 0 1 87.3 215.0"/><path class="chr" d="M146.2 180.1A232 232 0 0 1 87.3 215.0" stroke="#d45294" pathLength="1" style="--len:1;--i:6"/><text class="chr-label" x="107.9" y="182.5">7</text></g><g class="chr-group" data-chr="8"><path class="chr-hit" d="M81.2 217.3A232 232 0 0 1 20.3 231.1"/><path class="chr" d="M81.2 217.3A232 232 0 0 1 20.3 231.1" stroke="#c557a3" pathLength="1" style="--len:1;--i:7"/><text class="chr-label" x="46.8" y="206.8">8</text></g><g class="chr-group" data-chr="9"><path class="chr-hit" d="M13.8 231.6A232 232 0 0 1 -45.6 227.5"/><path class="chr" d="M13.8 231.6A232 232 0 0 1 -45.6 227.5" stroke="#b85bb1" pathLength="1" style="--len:1;--i:8"/><text class="chr-label" x="-14.6" y="211.5">9</text></g><g class="chr-group" data-chr="10"><path class="chr-hit" d="M-51.9 226.1A232 232 0 0 1 -106.2 206.3"/><path class="chr" d="M-51.9 226.1A232 232 0 0 1 -106.2 206.3" stroke="#ab5fbe" pathLength="1" style="--len:1;--i:9"/><text class="chr-label" x="-72.8" y="199.1">10</text></g><g class="chr-group" data-chr="11"><path class="chr-hit" d="M-111.9 203.2A232 232 0 0 1 -158.9 169.0"/><path class="chr" d="M-111.9 203.2A232 232 0 0 1 -158.9 169.0" stroke="#9e64cc" pathLength="1" style="--len:1;--i:10"/><text class="chr-label" x="-124.7" y="171.4">11</text></g><g class="chr-group" data-chr="12"><path class="chr-hit" d="M-163.6 164.5A232 232 0 0 1 -199.0 119.3"/><path class="chr" d="M-163.6 164.5A232 232 0 0 1 -199.0 119.3" stroke="#9168d9" pathLength="1" style="--len:1;--i:11"/><text class="chr-label" x="-166.9" y="130.7">12</text></g><g class="chr-group" data-chr="13"><path class="chr-hit" d="M-202.2 113.7A232 232 0 0 1 -221.6 68.5"/><path class="chr" d="M-202.2 113.7A232 232 0 0 1 -221.6 68.5" stroke="#856de1" pathLength="1" style="--len:1;--i:12"/><text class="chr-label" x="-194.8" y="83.7">13</text></g><g class="chr-group" data-chr="14"><path class="chr-hit" d="M-223.5 62.3A232 232 0 0 1 -231.4 16.8"/><path class="chr" d="M-223.5 62.3A232 232 0 0 1 -231.4 16.8" stroke="#7a73e2" pathLength="1" style="--len:1;--i:13"/><text class="chr-label" x="-208.9" y="36.3">14</text></g><g class="chr-group" data-chr="15"><path class="chr-hit" d="M-231.8 10.4A232 232 0 0 1 -229.6 -33.6"/><path class="chr" d="M-231.8 10.4A232 232 0 0 1 -229.6 -33.6" stroke="#7079e4" pathLength="1" style="--len:1;--i:14"/><text class="chr-label" x="-211.7" y="-10.7">15</text></g><g class="chr-group" data-chr="16"><path class="chr-hit" d="M-228.5 -40.0A232 232 0 0 1 -218.6 -77.6"/><path class="chr" d="M-228.5 -40.0A232 232 0 0 1 -218.6 -77.6" stroke="#667fe5" pathLength="1" style="--len:1;--i:15"/><text class="chr-label" x="-205.0" y="-53.9">16</text></g><g class="chr-group" data-chr="17"><path class="chr-hit" d="M-216.4 -83.7A232 232 0 0 1 -200.9 -116.0"/><path class="chr" d="M-216.4 -83.7A232 232 0 0 1 -200.9 -116.0" stroke="#5e84e6" pathLength="1" style="--len:1;--i:16"/><text class="chr-label" x="-191.2" y="-91.5">17</text></g><g class="chr-group" data-chr="18"><path class="chr-hit" d="M-197.6 -121.6A232 232 0 0 1 -177.3 -149.6"/><path class="chr" d="M-197.6 -121.6A232 232 0 0 1 -177.3 -149.6" stroke="#5589e8" pathLength="1" style="--len:1;--i:17"/><text class="chr-label" x="-171.8" y="-124.2">18</text></g><g class="chr-group" data-chr="19"><path class="chr-hit" d="M-173.1 -154.5A232 232 0 0 1 -155.1 -172.5"/><path class="chr" d="M-173.1 -154.5A232 232 0 0 1 -155.1 -172.5" stroke="#4e8de9" pathLength="1" style="--len:1;--i:18"/><text class="chr-label" x="-150.2" y="-149.6">19</text></g><g class="chr-group" data-chr="20"><path class="chr-hit" d="M-150.2 -176.8A232 232 0 0 1 -128.1 -193.4"/><path class="chr" d="M-150.2 -176.8A232 232 0 0 1 -128.1 -193.4" stroke="#4891ea" pathLength="1" style="--len:1;--i:19"/><text class="chr-label" x="-127.4" y="-169.5">20</text></g><g class="chr-group" data-chr="21"><path class="chr-hit" d="M-122.7 -196.9A232 232 0 0 1 -105.0 -206.9"/><path class="chr" d="M-122.7 -196.9A232 232 0 0 1 -105.0 -206.9" stroke="#4294eb" pathLength="1" style="--len:1;--i:20"/><text class="chr-label" x="-104.1" y="-184.7">21</text></g><g class="chr-group" data-chr="22"><path class="chr-hit" d="M-99.2 -209.7A232 232 0 0 1 -78.8 -218.2"/><path class="chr" d="M-99.2 -209.7A232 232 0 0 1 -78.8 -218.2" stroke="#3c97eb" pathLength="1" style="--len:1;--i:21"/><text class="chr-label" x="-81.4" y="-195.8">22</text></g><g class="chr-group" data-chr="X"><path class="chr-hit" d="M-72.7 -220.3A232 232 0 0 1 -6.5 -231.9"/><path class="chr" d="M-72.7 -220.3A232 232 0 0 1 -6.5 -231.9" stroke="#329ded" pathLength="1" style="--len:1;--i:22"/><text class="chr-label" x="-36.6" y="-208.8">X</text></g><g aria-hidden="true"><line class="cn" x1="2.3" y1="-176.0" x2="2.4" y2="-186.5" stroke="#f39326" stroke-width="3.2" stroke-linecap="round" opacity="0.69" style="--i:0"/><line class="cn" x1="6.8" y1="-175.9" x2="7.2" y2="-187.5" stroke="#f39227" stroke-width="3.2" stroke-linecap="round" opacity="0.72" style="--i:1"/><line class="cn" x1="11.3" y1="-175.6" x2="11.8" y2="-184.1" stroke="#f39128" stroke-width="3.2" stroke-linecap="round" opacity="0.65" style="--i:2"/><line class="cn" x1="15.8" y1="-175.3" x2="16.6" y2="-183.9" stroke="#f39029" stroke-width="3.2" stroke-linecap="round" opacity="0.65" style="--i:3"/><line class="cn" x1="20.3" y1="-174.8" x2="21.5" y2="-185.2" stroke="#f38f2a" stroke-width="3.2" stroke-linecap="round" opacity="0.69" style="--i:4"/><line class="cn" x1="24.8" y1="-174.2" x2="25.8" y2="-181.2" stroke="#f38e2b" stroke-width="3.2" stroke-linecap="round" opacity="0.61" style="--i:5"/><line class="cn" x1="29.2" y1="-173.6" x2="30.4" y2="-180.3" stroke="#f28d2c" stroke-width="3.2" stroke-linecap="round" opacity="0.61" style="--i:6"/><line class="cn" x1="33.7" y1="-172.7" x2="35.3" y2="-181.0" stroke="#f28c2d" stroke-width="3.2" stroke-linecap="round" opacity="0.64" style="--i:7"/><line class="cn" x1="38.1" y1="-171.8" x2="41.2" y2="-185.6" stroke="#f28b2e" stroke-width="3.2" stroke-linecap="round" opacity="0.77" style="--i:8"/><line class="cn" x1="42.5" y1="-170.8" x2="43.6" y2="-175.1" stroke="#f28a2f" stroke-width="3.2" stroke-linecap="round" opacity="0.55" style="--i:9"/><line class="cn" x1="46.9" y1="-169.6" x2="47.9" y2="-173.4" stroke="#f28a30" stroke-width="3.2" stroke-linecap="round" opacity="0.54" style="--i:10"/><line class="cn" x1="51.2" y1="-168.4" x2="52.9" y2="-173.8" stroke="#f28931" stroke-width="3.2" stroke-linecap="round" opacity="0.58" style="--i:11"/><line class="cn" x1="55.5" y1="-167.0" x2="57.2" y2="-172.1" stroke="#f28832" stroke-width="3.2" stroke-linecap="round" opacity="0.57" style="--i:12"/><line class="cn" x1="59.8" y1="-165.5" x2="60.9" y2="-168.6" stroke="#f28733" stroke-width="3.2" stroke-linecap="round" opacity="0.52" style="--i:13"/><line class="cn" x1="64.0" y1="-163.9" x2="65.5" y2="-167.8" stroke="#f28634" stroke-width="3.2" stroke-linecap="round" opacity="0.54" style="--i:14"/><line class="cn" x1="68.2" y1="-162.2" x2="70.0" y2="-166.6" stroke="#f28535" stroke-width="3.2" stroke-linecap="round" opacity="0.56" style="--i:15"/><line class="cn" x1="72.4" y1="-160.4" x2="73.8" y2="-163.7" stroke="#f28436" stroke-width="3.2" stroke-linecap="round" opacity="0.53" style="--i:16"/><line class="cn" x1="76.4" y1="-158.5" x2="78.7" y2="-163.2" stroke="#f18337" stroke-width="3.2" stroke-linecap="round" opacity="0.57" style="--i:17"/><line class="cn" x1="84.9" y1="-154.2" x2="88.7" y2="-161.1" stroke="#f1813a" stroke-width="3.2" stroke-linecap="round" opacity="0.63" style="--i:18"/><line class="cn" x1="89.0" y1="-151.9" x2="93.3" y2="-159.3" stroke="#f1813b" stroke-width="3.2" stroke-linecap="round" opacity="0.65" style="--i:19"/><line class="cn" x1="93.0" y1="-149.5" x2="98.0" y2="-157.6" stroke="#f1803c" stroke-width="3.2" stroke-linecap="round" opacity="0.67" style="--i:20"/><line class="cn" x1="96.9" y1="-146.9" x2="102.4" y2="-155.4" stroke="#f17f3d" stroke-width="3.2" stroke-linecap="round" opacity="0.68" style="--i:21"/><line class="cn" x1="100.7" y1="-144.3" x2="105.5" y2="-151.1" stroke="#f17e3e" stroke-width="3.2" stroke-linecap="round" opacity="0.64" style="--i:22"/><line class="cn" x1="104.5" y1="-141.6" x2="111.1" y2="-150.5" stroke="#f17d3f" stroke-width="3.2" stroke-linecap="round" opacity="0.70" style="--i:23"/><line class="cn" x1="108.3" y1="-138.8" x2="115.3" y2="-147.8" stroke="#f17c40" stroke-width="3.2" stroke-linecap="round" opacity="0.71" style="--i:24"/><line class="cn" x1="111.9" y1="-135.8" x2="118.8" y2="-144.2" stroke="#f17b41" stroke-width="3.2" stroke-linecap="round" opacity="0.70" style="--i:25"/><line class="cn" x1="115.5" y1="-132.8" x2="122.3" y2="-140.7" stroke="#f17a42" stroke-width="3.2" stroke-linecap="round" opacity="0.69" style="--i:26"/><line class="cn" x1="118.9" y1="-129.7" x2="126.6" y2="-138.1" stroke="#f17943" stroke-width="3.2" stroke-linecap="round" opacity="0.71" style="--i:27"/><line class="cn" x1="122.3" y1="-126.5" x2="129.3" y2="-133.7" stroke="#f07845" stroke-width="3.2" stroke-linecap="round" opacity="0.68" style="--i:28"/><line class="cn" x1="125.7" y1="-123.2" x2="131.6" y2="-129.1" stroke="#f07746" stroke-width="3.2" stroke-linecap="round" opacity="0.64" style="--i:29"/><line class="cn" x1="128.9" y1="-119.9" x2="136.7" y2="-127.1" stroke="#f07647" stroke-width="3.2" stroke-linecap="round" opacity="0.69" style="--i:30"/><line class="cn" x1="132.0" y1="-116.4" x2="140.5" y2="-123.9" stroke="#f07548" stroke-width="3.2" stroke-linecap="round" opacity="0.71" style="--i:31"/><line class="cn" x1="135.1" y1="-112.9" x2="142.4" y2="-119.0" stroke="#f07549" stroke-width="3.2" stroke-linecap="round" opacity="0.67" style="--i:32"/><line class="cn" x1="138.0" y1="-109.2" x2="144.4" y2="-114.3" stroke="#f0744a" stroke-width="3.2" stroke-linecap="round" opacity="0.64" style="--i:33"/><line class="cn" x1="140.9" y1="-105.5" x2="147.9" y2="-110.8" stroke="#f0734b" stroke-width="3.2" stroke-linecap="round" opacity="0.65" style="--i:34"/><line class="cn" x1="146.4" y1="-97.7" x2="156.6" y2="-104.6" stroke="#f0714d" stroke-width="3.2" stroke-linecap="round" opacity="0.73" style="--i:35"/><line class="cn" x1="148.9" y1="-93.8" x2="160.2" y2="-100.9" stroke="#f0704e" stroke-width="3.2" stroke-linecap="round" opacity="0.76" style="--i:36"/><line class="cn" x1="151.3" y1="-89.9" x2="161.8" y2="-96.1" stroke="#f06f4f" stroke-width="3.2" stroke-linecap="round" opacity="0.73" style="--i:37"/><line class="cn" x1="153.6" y1="-85.9" x2="165.8" y2="-92.6" stroke="#ef6e51" stroke-width="3.2" stroke-linecap="round" opacity="0.77" style="--i:38"/><line class="cn" x1="155.8" y1="-81.8" x2="169.1" y2="-88.7" stroke="#ef6d52" stroke-width="3.2" stroke-linecap="round" opacity="0.79" style="--i:39"/><line class="cn" x1="157.9" y1="-77.6" x2="169.5" y2="-83.3" stroke="#ef6c53" stroke-width="3.2" stroke-linecap="round" opacity="0.75" style="--i:40"/><line class="cn" x1="159.9" y1="-73.4" x2="171.9" y2="-79.0" stroke="#ef6b54" stroke-width="3.2" stroke-linecap="round" opacity="0.75" style="--i:41"/><line class="cn" x1="161.8" y1="-69.2" x2="176.1" y2="-75.3" stroke="#ef6a55" stroke-width="3.2" stroke-linecap="round" opacity="0.81" style="--i:42"/><line class="cn" x1="163.6" y1="-64.9" x2="168.1" y2="-66.7" stroke="#ef6956" stroke-width="3.2" stroke-linecap="round" opacity="0.56" style="--i:43"/><line class="cn" x1="165.2" y1="-60.6" x2="170.8" y2="-62.6" stroke="#ef6857" stroke-width="3.2" stroke-linecap="round" opacity="0.58" style="--i:44"/><line class="cn" x1="166.8" y1="-56.2" x2="171.5" y2="-57.8" stroke="#ef6858" stroke-width="3.2" stroke-linecap="round" opacity="0.56" style="--i:45"/><line class="cn" x1="168.2" y1="-51.8" x2="176.5" y2="-54.3" stroke="#ef6759" stroke-width="3.2" stroke-linecap="round" opacity="0.65" style="--i:46"/><line class="cn" x1="169.5" y1="-47.3" x2="180.0" y2="-50.3" stroke="#ef665a" stroke-width="3.2" stroke-linecap="round" opacity="0.70" style="--i:47"/><line class="cn" x1="170.7" y1="-42.9" x2="179.6" y2="-45.1" stroke="#ef655b" stroke-width="3.2" stroke-linecap="round" opacity="0.66" style="--i:48"/><line class="cn" x1="172.8" y1="-33.5" x2="181.4" y2="-35.1" stroke="#ee635e" stroke-width="3.2" stroke-linecap="round" opacity="0.65" style="--i:49"/><line class="cn" x1="173.6" y1="-28.7" x2="185.0" y2="-30.6" stroke="#ee625f" stroke-width="3.2" stroke-linecap="round" opacity="0.71" style="--i:50"/><line class="cn" x1="174.4" y1="-24.0" x2="185.8" y2="-25.6" stroke="#ee6160" stroke-width="3.2" stroke-linecap="round" opacity="0.72" style="--i:51"/><line class="cn" x1="174.9" y1="-19.2" x2="184.9" y2="-20.3" stroke="#ee6061" stroke-width="3.2" stroke-linecap="round" opacity="0.68" style="--i:52"/><line class="cn" x1="175.4" y1="-14.5" x2="185.7" y2="-15.3" stroke="#ee5f62" stroke-width="3.2" stroke-linecap="round" opacity="0.69" style="--i:53"/><line class="cn" x1="175.7" y1="-9.7" x2="180.8" y2="-10.0" stroke="#ee5e63" stroke-width="3.2" stroke-linecap="round" opacity="0.57" style="--i:54"/><line class="cn" x1="175.9" y1="-4.9" x2="180.6" y2="-5.0" stroke="#ee5d64" stroke-width="3.2" stroke-linecap="round" opacity="0.56" style="--i:55"/><line class="cn" x1="176.0" y1="-0.1" x2="180.1" y2="-0.1" stroke="#ee5c65" stroke-width="3.2" stroke-linecap="round" opacity="0.54" style="--i:56"/><line class="cn" x1="175.9" y1="4.7" x2="179.7" y2="4.8" stroke="#ee5b67" stroke-width="3.2" stroke-linecap="round" opacity="0.54" style="--i:57"/><line class="cn" x1="175.7" y1="9.5" x2="181.8" y2="9.8" stroke="#ee5a68" stroke-width="3.2" stroke-linecap="round" opacity="0.59" style="--i:58"/><line class="cn" x1="175.4" y1="14.3" x2="181.7" y2="14.8" stroke="#ed5969" stroke-width="3.2" stroke-linecap="round" opacity="0.60" style="--i:59"/><line class="cn" x1="175.0" y1="19.0" x2="180.4" y2="19.6" stroke="#ed586a" stroke-width="3.2" stroke-linecap="round" opacity="0.58" style="--i:60"/><line class="cn" x1="174.4" y1="23.8" x2="183.1" y2="25.0" stroke="#ed586b" stroke-width="3.2" stroke-linecap="round" opacity="0.65" style="--i:61"/><line class="cn" x1="172.8" y1="33.2" x2="180.5" y2="34.7" stroke="#ed566d" stroke-width="3.2" stroke-linecap="round" opacity="0.63" style="--i:62"/><line class="cn" x1="171.9" y1="37.7" x2="179.0" y2="39.3" stroke="#ed556e" stroke-width="3.2" stroke-linecap="round" opacity="0.62" style="--i:63"/><line class="cn" x1="170.9" y1="42.2" x2="177.5" y2="43.8" stroke="#ed546f" stroke-width="3.2" stroke-linecap="round" opacity="0.61" style="--i:64"/><line class="cn" x1="169.7" y1="46.6" x2="185.4" y2="50.9" stroke="#ed5371" stroke-width="3.2" stroke-linecap="round" opacity="0.82" style="--i:65"/><line class="cn" x1="168.5" y1="51.0" x2="177.0" y2="53.6" stroke="#ed5272" stroke-width="3.2" stroke-linecap="round" opacity="0.66" style="--i:66"/><line class="cn" x1="167.1" y1="55.3" x2="179.0" y2="59.3" stroke="#ed5173" stroke-width="3.2" stroke-linecap="round" opacity="0.74" style="--i:67"/><line class="cn" x1="165.6" y1="59.6" x2="176.4" y2="63.5" stroke="#ed5074" stroke-width="3.2" stroke-linecap="round" opacity="0.71" style="--i:68"/><line class="cn" x1="164.0" y1="63.9" x2="173.5" y2="67.6" stroke="#ed4f75" stroke-width="3.2" stroke-linecap="round" opacity="0.69" style="--i:69"/><line class="cn" x1="162.3" y1="68.2" x2="175.1" y2="73.5" stroke="#ec4e76" stroke-width="3.2" stroke-linecap="round" opacity="0.77" style="--i:70"/><line class="cn" x1="160.4" y1="72.3" x2="172.4" y2="77.7" stroke="#ec4d77" stroke-width="3.2" stroke-linecap="round" opacity="0.75" style="--i:71"/><line class="cn" x1="158.5" y1="76.5" x2="172.0" y2="83.0" stroke="#ec4d78" stroke-width="3.2" stroke-linecap="round" opacity="0.79" style="--i:72"/><line class="cn" x1="156.5" y1="80.6" x2="169.9" y2="87.5" stroke="#ec4c79" stroke-width="3.2" stroke-linecap="round" opacity="0.80" style="--i:73"/><line class="cn" x1="154.3" y1="84.6" x2="167.5" y2="91.8" stroke="#ec4b7a" stroke-width="3.2" stroke-linecap="round" opacity="0.79" style="--i:74"/><line class="cn" x1="149.5" y1="92.8" x2="159.2" y2="98.8" stroke="#eb4a7d" stroke-width="3.2" stroke-linecap="round" opacity="0.71" style="--i:75"/><line class="cn" x1="147.0" y1="96.8" x2="155.0" y2="102.0" stroke="#e94b7e" stroke-width="3.2" stroke-linecap="round" opacity="0.67" style="--i:76"/><line class="cn" x1="144.4" y1="100.6" x2="149.6" y2="104.3" stroke="#e84b7f" stroke-width="3.2" stroke-linecap="round" opacity="0.60" style="--i:77"/><line class="cn" x1="141.7" y1="104.4" x2="148.9" y2="109.8" stroke="#e74c80" stroke-width="3.2" stroke-linecap="round" opacity="0.66" style="--i:78"/><line class="cn" x1="138.8" y1="108.2" x2="145.9" y2="113.7" stroke="#e64c82" stroke-width="3.2" stroke-linecap="round" opacity="0.66" style="--i:79"/><line class="cn" x1="135.9" y1="111.8" x2="142.9" y2="117.5" stroke="#e44d83" stroke-width="3.2" stroke-linecap="round" opacity="0.66" style="--i:80"/><line class="cn" x1="132.9" y1="115.4" x2="137.6" y2="119.5" stroke="#e34d84" stroke-width="3.2" stroke-linecap="round" opacity="0.59" style="--i:81"/><line class="cn" x1="129.8" y1="118.9" x2="134.3" y2="123.0" stroke="#e24d86" stroke-width="3.2" stroke-linecap="round" opacity="0.59" style="--i:82"/><line class="cn" x1="126.6" y1="122.3" x2="132.2" y2="127.7" stroke="#e14e87" stroke-width="3.2" stroke-linecap="round" opacity="0.63" style="--i:83"/><line class="cn" x1="123.3" y1="125.6" x2="129.3" y2="131.7" stroke="#df4e88" stroke-width="3.2" stroke-linecap="round" opacity="0.65" style="--i:84"/><line class="cn" x1="119.9" y1="128.8" x2="125.3" y2="134.6" stroke="#de4f89" stroke-width="3.2" stroke-linecap="round" opacity="0.63" style="--i:85"/><line class="cn" x1="116.5" y1="132.0" x2="120.2" y2="136.2" stroke="#dd4f8b" stroke-width="3.2" stroke-linecap="round" opacity="0.58" style="--i:86"/><line class="cn" x1="109.1" y1="138.1" x2="116.4" y2="147.4" stroke="#da508d" stroke-width="3.2" stroke-linecap="round" opacity="0.72" style="--i:87"/><line class="cn" x1="105.3" y1="141.0" x2="111.7" y2="149.6" stroke="#d9508f" stroke-width="3.2" stroke-linecap="round" opacity="0.69" style="--i:88"/><line class="cn" x1="101.5" y1="143.8" x2="109.2" y2="154.7" stroke="#d85190" stroke-width="3.2" stroke-linecap="round" opacity="0.76" style="--i:89"/><line class="cn" x1="97.6" y1="146.5" x2="106.3" y2="159.7" stroke="#d65191" stroke-width="3.2" stroke-linecap="round" opacity="0.81" style="--i:90"/><line class="cn" x1="93.6" y1="149.1" x2="100.8" y2="160.6" stroke="#d55192" stroke-width="3.2" stroke-linecap="round" opacity="0.76" style="--i:91"/><line class="cn" x1="89.5" y1="151.5" x2="97.1" y2="164.3" stroke="#d45294" stroke-width="3.2" stroke-linecap="round" opacity="0.79" style="--i:92"/><line class="cn" x1="85.4" y1="153.9" x2="87.3" y2="157.3" stroke="#d35295" stroke-width="3.2" stroke-linecap="round" opacity="0.54" style="--i:93"/><line class="cn" x1="81.3" y1="156.1" x2="84.2" y2="161.8" stroke="#d15396" stroke-width="3.2" stroke-linecap="round" opacity="0.60" style="--i:94"/><line class="cn" x1="77.0" y1="158.3" x2="84.2" y2="173.0" stroke="#d05398" stroke-width="3.2" stroke-linecap="round" opacity="0.82" style="--i:95"/><line class="cn" x1="72.7" y1="160.3" x2="78.5" y2="173.0" stroke="#cf5399" stroke-width="3.2" stroke-linecap="round" opacity="0.77" style="--i:96"/><line class="cn" x1="68.4" y1="162.2" x2="73.5" y2="174.2" stroke="#ce549a" stroke-width="3.2" stroke-linecap="round" opacity="0.75" style="--i:97"/><line class="cn" x1="59.4" y1="165.7" x2="61.6" y2="172.0" stroke="#cb559d" stroke-width="3.2" stroke-linecap="round" opacity="0.60" style="--i:98"/><line class="cn" x1="54.9" y1="167.2" x2="57.3" y2="174.6" stroke="#ca559e" stroke-width="3.2" stroke-linecap="round" opacity="0.63" style="--i:99"/><line class="cn" x1="50.3" y1="168.6" x2="52.5" y2="175.9" stroke="#c956a0" stroke-width="3.2" stroke-linecap="round" opacity="0.62" style="--i:100"/><line class="cn" x1="45.8" y1="169.9" x2="47.1" y2="174.8" stroke="#c756a1" stroke-width="3.2" stroke-linecap="round" opacity="0.56" style="--i:101"/><line class="cn" x1="41.2" y1="171.1" x2="42.4" y2="176.3" stroke="#c656a2" stroke-width="3.2" stroke-linecap="round" opacity="0.57" style="--i:102"/><line class="cn" x1="36.5" y1="172.2" x2="37.9" y2="178.5" stroke="#c557a3" stroke-width="3.2" stroke-linecap="round" opacity="0.60" style="--i:103"/><line class="cn" x1="31.9" y1="173.1" x2="32.9" y2="178.8" stroke="#c457a5" stroke-width="3.2" stroke-linecap="round" opacity="0.58" style="--i:104"/><line class="cn" x1="27.2" y1="173.9" x2="29.5" y2="188.8" stroke="#c258a6" stroke-width="3.2" stroke-linecap="round" opacity="0.79" style="--i:105"/><line class="cn" x1="22.5" y1="174.6" x2="25.5" y2="198.4" stroke="#c158a7" stroke-width="3.2" stroke-linecap="round" opacity="1.00" style="--i:106"/><line class="cn" x1="17.7" y1="175.1" x2="20.2" y2="199.0" stroke="#c058a9" stroke-width="3.2" stroke-linecap="round" opacity="1.00" style="--i:107"/><line class="cn" x1="8.2" y1="175.8" x2="8.8" y2="188.5" stroke="#bd59ab" stroke-width="3.2" stroke-linecap="round" opacity="0.74" style="--i:108"/><line class="cn" x1="3.7" y1="176.0" x2="3.9" y2="186.7" stroke="#bc5aac" stroke-width="3.2" stroke-linecap="round" opacity="0.70" style="--i:109"/><line class="cn" x1="-0.8" y1="176.0" x2="-0.9" y2="187.4" stroke="#bb5aae" stroke-width="3.2" stroke-linecap="round" opacity="0.71" style="--i:110"/><line class="cn" x1="-5.4" y1="175.9" x2="-5.8" y2="188.8" stroke="#ba5aaf" stroke-width="3.2" stroke-linecap="round" opacity="0.75" style="--i:111"/><line class="cn" x1="-9.9" y1="175.7" x2="-10.7" y2="190.7" stroke="#b85bb0" stroke-width="3.2" stroke-linecap="round" opacity="0.79" style="--i:112"/><line class="cn" x1="-14.4" y1="175.4" x2="-15.5" y2="188.8" stroke="#b75bb1" stroke-width="3.2" stroke-linecap="round" opacity="0.76" style="--i:113"/><line class="cn" x1="-18.9" y1="175.0" x2="-20.4" y2="189.3" stroke="#b65cb3" stroke-width="3.2" stroke-linecap="round" opacity="0.78" style="--i:114"/><line class="cn" x1="-23.4" y1="174.4" x2="-25.1" y2="187.0" stroke="#b55cb4" stroke-width="3.2" stroke-linecap="round" opacity="0.74" style="--i:115"/><line class="cn" x1="-27.9" y1="173.8" x2="-30.0" y2="186.8" stroke="#b45cb5" stroke-width="3.2" stroke-linecap="round" opacity="0.75" style="--i:116"/><line class="cn" x1="-32.3" y1="173.0" x2="-35.1" y2="187.9" stroke="#b25db6" stroke-width="3.2" stroke-linecap="round" opacity="0.80" style="--i:117"/><line class="cn" x1="-41.7" y1="171.0" x2="-44.3" y2="181.3" stroke="#b05eb9" stroke-width="3.2" stroke-linecap="round" opacity="0.69" style="--i:118"/><line class="cn" x1="-46.5" y1="169.8" x2="-49.0" y2="178.9" stroke="#ae5eba" stroke-width="3.2" stroke-linecap="round" opacity="0.67" style="--i:119"/><line class="cn" x1="-51.2" y1="168.4" x2="-54.0" y2="177.7" stroke="#ad5fbc" stroke-width="3.2" stroke-linecap="round" opacity="0.67" style="--i:120"/><line class="cn" x1="-55.8" y1="166.9" x2="-59.1" y2="176.8" stroke="#ac5fbd" stroke-width="3.2" stroke-linecap="round" opacity="0.69" style="--i:121"/><line class="cn" x1="-60.4" y1="165.3" x2="-63.8" y2="174.5" stroke="#ab5fbe" stroke-width="3.2" stroke-linecap="round" opacity="0.67" style="--i:122"/><line class="cn" x1="-65.0" y1="163.6" x2="-69.2" y2="174.1" stroke="#a960c0" stroke-width="3.2" stroke-linecap="round" opacity="0.71" style="--i:123"/><line class="cn" x1="-69.5" y1="161.7" x2="-73.9" y2="171.9" stroke="#a860c1" stroke-width="3.2" stroke-linecap="round" opacity="0.70" style="--i:124"/><line class="cn" x1="-74.0" y1="159.7" x2="-77.6" y2="167.6" stroke="#a761c2" stroke-width="3.2" stroke-linecap="round" opacity="0.65" style="--i:125"/><line class="cn" x1="-78.4" y1="157.6" x2="-87.4" y2="175.9" stroke="#a561c4" stroke-width="3.2" stroke-linecap="round" opacity="0.92" style="--i:126"/><line class="cn" x1="-87.0" y1="153.0" x2="-89.5" y2="157.3" stroke="#a362c6" stroke-width="3.2" stroke-linecap="round" opacity="0.56" style="--i:127"/><line class="cn" x1="-91.3" y1="150.5" x2="-93.9" y2="154.9" stroke="#a162c8" stroke-width="3.2" stroke-linecap="round" opacity="0.57" style="--i:128"/><line class="cn" x1="-95.4" y1="147.9" x2="-99.7" y2="154.5" stroke="#a063c9" stroke-width="3.2" stroke-linecap="round" opacity="0.63" style="--i:129"/><line class="cn" x1="-99.5" y1="145.2" x2="-102.6" y2="149.7" stroke="#9f63ca" stroke-width="3.2" stroke-linecap="round" opacity="0.57" style="--i:130"/><line class="cn" x1="-103.5" y1="142.3" x2="-107.9" y2="148.3" stroke="#9e64cc" stroke-width="3.2" stroke-linecap="round" opacity="0.62" style="--i:131"/><line class="cn" x1="-107.5" y1="139.4" x2="-117.9" y2="152.9" stroke="#9c64cd" stroke-width="3.2" stroke-linecap="round" opacity="0.84" style="--i:132"/><line class="cn" x1="-111.3" y1="136.3" x2="-122.1" y2="149.5" stroke="#9b64cf" stroke-width="3.2" stroke-linecap="round" opacity="0.84" style="--i:133"/><line class="cn" x1="-115.1" y1="133.1" x2="-125.0" y2="144.6" stroke="#9a65d0" stroke-width="3.2" stroke-linecap="round" opacity="0.80" style="--i:134"/><line class="cn" x1="-118.8" y1="129.9" x2="-129.9" y2="142.1" stroke="#9865d1" stroke-width="3.2" stroke-linecap="round" opacity="0.83" style="--i:135"/><line class="cn" x1="-125.8" y1="123.1" x2="-131.0" y2="128.1" stroke="#9666d4" stroke-width="3.2" stroke-linecap="round" opacity="0.62" style="--i:136"/><line class="cn" x1="-129.2" y1="119.6" x2="-133.6" y2="123.6" stroke="#9467d5" stroke-width="3.2" stroke-linecap="round" opacity="0.59" style="--i:137"/><line class="cn" x1="-132.4" y1="116.0" x2="-138.4" y2="121.2" stroke="#9367d7" stroke-width="3.2" stroke-linecap="round" opacity="0.63" style="--i:138"/><line class="cn" x1="-135.5" y1="112.3" x2="-143.8" y2="119.1" stroke="#9267d8" stroke-width="3.2" stroke-linecap="round" opacity="0.69" style="--i:139"/><line class="cn" x1="-138.6" y1="108.5" x2="-145.2" y2="113.7" stroke="#9168d9" stroke-width="3.2" stroke-linecap="round" opacity="0.64" style="--i:140"/><line class="cn" x1="-141.5" y1="104.6" x2="-146.6" y2="108.4" stroke="#8f68db" stroke-width="3.2" stroke-linecap="round" opacity="0.59" style="--i:141"/><line class="cn" x1="-144.3" y1="100.7" x2="-151.8" y2="105.9" stroke="#8e69dc" stroke-width="3.2" stroke-linecap="round" opacity="0.66" style="--i:142"/><line class="cn" x1="-147.1" y1="96.7" x2="-152.5" y2="100.2" stroke="#8d69dd" stroke-width="3.2" stroke-linecap="round" opacity="0.60" style="--i:143"/><line class="cn" x1="-149.7" y1="92.6" x2="-155.0" y2="95.9" stroke="#8b6adf" stroke-width="3.2" stroke-linecap="round" opacity="0.59" style="--i:144"/><line class="cn" x1="-154.5" y1="84.2" x2="-163.5" y2="89.1" stroke="#896be0" stroke-width="3.2" stroke-linecap="round" opacity="0.68" style="--i:145"/><line class="cn" x1="-156.7" y1="80.1" x2="-168.5" y2="86.1" stroke="#886be0" stroke-width="3.2" stroke-linecap="round" opacity="0.75" style="--i:146"/><line class="cn" x1="-158.8" y1="75.9" x2="-168.4" y2="80.5" stroke="#866ce1" stroke-width="3.2" stroke-linecap="round" opacity="0.69" style="--i:147"/><line class="cn" x1="-160.7" y1="71.7" x2="-175.4" y2="78.2" stroke="#856de1" stroke-width="3.2" stroke-linecap="round" opacity="0.82" style="--i:148"/><line class="cn" x1="-162.6" y1="67.4" x2="-175.7" y2="72.8" stroke="#846de1" stroke-width="3.2" stroke-linecap="round" opacity="0.77" style="--i:149"/><line class="cn" x1="-164.3" y1="63.0" x2="-175.9" y2="67.5" stroke="#836ee1" stroke-width="3.2" stroke-linecap="round" opacity="0.73" style="--i:150"/><line class="cn" x1="-165.9" y1="58.6" x2="-181.5" y2="64.1" stroke="#826fe1" stroke-width="3.2" stroke-linecap="round" opacity="0.83" style="--i:151"/><line class="cn" x1="-167.4" y1="54.2" x2="-181.1" y2="58.7" stroke="#8070e1" stroke-width="3.2" stroke-linecap="round" opacity="0.78" style="--i:152"/><line class="cn" x1="-170.2" y1="44.9" x2="-184.5" y2="48.6" stroke="#7e71e2" stroke-width="3.2" stroke-linecap="round" opacity="0.79" style="--i:153"/><line class="cn" x1="-171.4" y1="40.0" x2="-186.2" y2="43.4" stroke="#7d72e2" stroke-width="3.2" stroke-linecap="round" opacity="0.80" style="--i:154"/><line class="cn" x1="-172.5" y1="35.1" x2="-186.3" y2="37.9" stroke="#7b73e2" stroke-width="3.2" stroke-linecap="round" opacity="0.77" style="--i:155"/><line class="cn" x1="-173.4" y1="30.2" x2="-182.8" y2="31.8" stroke="#7a73e2" stroke-width="3.2" stroke-linecap="round" opacity="0.67" style="--i:156"/><line class="cn" x1="-174.2" y1="25.2" x2="-178.1" y2="25.8" stroke="#7974e3" stroke-width="3.2" stroke-linecap="round" opacity="0.54" style="--i:157"/><line class="cn" x1="-174.8" y1="20.2" x2="-179.8" y2="20.8" stroke="#7775e3" stroke-width="3.2" stroke-linecap="round" opacity="0.56" style="--i:158"/><line class="cn" x1="-175.3" y1="15.3" x2="-182.0" y2="15.8" stroke="#7676e3" stroke-width="3.2" stroke-linecap="round" opacity="0.60" style="--i:159"/><line class="cn" x1="-175.9" y1="5.5" x2="-182.8" y2="5.7" stroke="#7377e3" stroke-width="3.2" stroke-linecap="round" opacity="0.61" style="--i:160"/><line class="cn" x1="-176.0" y1="0.7" x2="-182.2" y2="0.7" stroke="#7278e3" stroke-width="3.2" stroke-linecap="round" opacity="0.59" style="--i:161"/><line class="cn" x1="-176.0" y1="-4.1" x2="-182.2" y2="-4.2" stroke="#7179e4" stroke-width="3.2" stroke-linecap="round" opacity="0.59" style="--i:162"/><line class="cn" x1="-175.8" y1="-8.9" x2="-184.0" y2="-9.3" stroke="#7079e4" stroke-width="3.2" stroke-linecap="round" opacity="0.64" style="--i:163"/><line class="cn" x1="-175.5" y1="-13.6" x2="-183.4" y2="-14.3" stroke="#6e7ae4" stroke-width="3.2" stroke-linecap="round" opacity="0.63" style="--i:164"/><line class="cn" x1="-175.0" y1="-18.4" x2="-181.6" y2="-19.1" stroke="#6d7be4" stroke-width="3.2" stroke-linecap="round" opacity="0.60" style="--i:165"/><line class="cn" x1="-174.5" y1="-23.1" x2="-182.2" y2="-24.2" stroke="#6c7ce4" stroke-width="3.2" stroke-linecap="round" opacity="0.63" style="--i:166"/><line class="cn" x1="-172.9" y1="-32.8" x2="-181.9" y2="-34.5" stroke="#697de5" stroke-width="3.2" stroke-linecap="round" opacity="0.66" style="--i:167"/><line class="cn" x1="-171.9" y1="-37.6" x2="-182.0" y2="-39.8" stroke="#687ee5" stroke-width="3.2" stroke-linecap="round" opacity="0.69" style="--i:168"/><line class="cn" x1="-170.8" y1="-42.4" x2="-179.5" y2="-44.5" stroke="#677fe5" stroke-width="3.2" stroke-linecap="round" opacity="0.66" style="--i:169"/><line class="cn" x1="-169.6" y1="-47.1" x2="-179.5" y2="-49.9" stroke="#667fe5" stroke-width="3.2" stroke-linecap="round" opacity="0.69" style="--i:170"/><line class="cn" x1="-168.2" y1="-51.9" x2="-177.0" y2="-54.6" stroke="#6480e5" stroke-width="3.2" stroke-linecap="round" opacity="0.66" style="--i:171"/><line class="cn" x1="-166.7" y1="-56.6" x2="-174.1" y2="-59.1" stroke="#6381e6" stroke-width="3.2" stroke-linecap="round" opacity="0.63" style="--i:172"/><line class="cn" x1="-163.3" y1="-65.6" x2="-174.9" y2="-70.2" stroke="#6082e6" stroke-width="3.2" stroke-linecap="round" opacity="0.74" style="--i:173"/><line class="cn" x1="-161.6" y1="-69.8" x2="-167.1" y2="-72.2" stroke="#5f83e6" stroke-width="3.2" stroke-linecap="round" opacity="0.59" style="--i:174"/><line class="cn" x1="-159.7" y1="-73.9" x2="-164.6" y2="-76.2" stroke="#5e84e6" stroke-width="3.2" stroke-linecap="round" opacity="0.57" style="--i:175"/><line class="cn" x1="-157.8" y1="-78.0" x2="-161.1" y2="-79.7" stroke="#5d84e7" stroke-width="3.2" stroke-linecap="round" opacity="0.54" style="--i:176"/><line class="cn" x1="-155.7" y1="-82.1" x2="-159.7" y2="-84.2" stroke="#5c85e7" stroke-width="3.2" stroke-linecap="round" opacity="0.55" style="--i:177"/><line class="cn" x1="-153.5" y1="-86.0" x2="-161.0" y2="-90.2" stroke="#5b86e7" stroke-width="3.2" stroke-linecap="round" opacity="0.65" style="--i:178"/><line class="cn" x1="-148.5" y1="-94.5" x2="-159.6" y2="-101.5" stroke="#5887e7" stroke-width="3.2" stroke-linecap="round" opacity="0.75" style="--i:179"/><line class="cn" x1="-145.6" y1="-98.8" x2="-157.8" y2="-107.1" stroke="#5788e7" stroke-width="3.2" stroke-linecap="round" opacity="0.79" style="--i:180"/><line class="cn" x1="-142.6" y1="-103.1" x2="-152.6" y2="-110.4" stroke="#5589e8" stroke-width="3.2" stroke-linecap="round" opacity="0.73" style="--i:181"/><line class="cn" x1="-139.5" y1="-107.3" x2="-146.2" y2="-112.6" stroke="#548ae8" stroke-width="3.2" stroke-linecap="round" opacity="0.65" style="--i:182"/><line class="cn" x1="-136.2" y1="-111.5" x2="-142.0" y2="-116.2" stroke="#538ae8" stroke-width="3.2" stroke-linecap="round" opacity="0.62" style="--i:183"/><line class="cn" x1="-129.7" y1="-119.0" x2="-133.8" y2="-122.7" stroke="#508ce8" stroke-width="3.2" stroke-linecap="round" opacity="0.58" style="--i:184"/><line class="cn" x1="-126.4" y1="-122.5" x2="-130.2" y2="-126.2" stroke="#4f8de9" stroke-width="3.2" stroke-linecap="round" opacity="0.57" style="--i:185"/><line class="cn" x1="-123.0" y1="-125.9" x2="-127.6" y2="-130.6" stroke="#4d8de9" stroke-width="3.2" stroke-linecap="round" opacity="0.60" style="--i:186"/><line class="cn" x1="-119.4" y1="-129.3" x2="-124.7" y2="-134.9" stroke="#4c8ee9" stroke-width="3.2" stroke-linecap="round" opacity="0.63" style="--i:187"/><line class="cn" x1="-111.9" y1="-135.8" x2="-119.7" y2="-145.2" stroke="#4a90e9" stroke-width="3.2" stroke-linecap="round" opacity="0.73" style="--i:188"/><line class="cn" x1="-107.8" y1="-139.1" x2="-114.6" y2="-147.8" stroke="#4890ea" stroke-width="3.2" stroke-linecap="round" opacity="0.70" style="--i:189"/><line class="cn" x1="-103.7" y1="-142.2" x2="-111.5" y2="-153.0" stroke="#4791ea" stroke-width="3.2" stroke-linecap="round" opacity="0.75" style="--i:190"/><line class="cn" x1="-99.4" y1="-145.3" x2="-107.1" y2="-156.6" stroke="#4592ea" stroke-width="3.2" stroke-linecap="round" opacity="0.76" style="--i:191"/><line class="cn" x1="-90.9" y1="-150.7" x2="-94.9" y2="-157.4" stroke="#4393ea" stroke-width="3.2" stroke-linecap="round" opacity="0.63" style="--i:192"/><line class="cn" x1="-86.4" y1="-153.3" x2="-90.0" y2="-159.6" stroke="#4294eb" stroke-width="3.2" stroke-linecap="round" opacity="0.62" style="--i:193"/><line class="cn" x1="-81.9" y1="-155.8" x2="-84.2" y2="-160.1" stroke="#4095eb" stroke-width="3.2" stroke-linecap="round" opacity="0.56" style="--i:194"/><line class="cn" x1="-72.7" y1="-160.3" x2="-77.3" y2="-170.4" stroke="#3e97eb" stroke-width="3.2" stroke-linecap="round" opacity="0.70" style="--i:195"/><line class="cn" x1="-67.6" y1="-162.5" x2="-71.8" y2="-172.7" stroke="#3c97eb" stroke-width="3.2" stroke-linecap="round" opacity="0.70" style="--i:196"/><line class="cn" x1="-62.4" y1="-164.6" x2="-66.4" y2="-175.1" stroke="#3b98ec" stroke-width="3.2" stroke-linecap="round" opacity="0.71" style="--i:197"/><line class="cn" x1="-52.9" y1="-167.9" x2="-55.9" y2="-177.3" stroke="#389aec" stroke-width="3.2" stroke-linecap="round" opacity="0.68" style="--i:198"/><line class="cn" x1="-48.5" y1="-169.2" x2="-49.8" y2="-173.8" stroke="#379bec" stroke-width="3.2" stroke-linecap="round" opacity="0.56" style="--i:199"/><line class="cn" x1="-44.0" y1="-170.4" x2="-47.7" y2="-184.8" stroke="#369bec" stroke-width="3.2" stroke-linecap="round" opacity="0.79" style="--i:200"/><line class="cn" x1="-39.5" y1="-171.5" x2="-42.9" y2="-186.3" stroke="#349cec" stroke-width="3.2" stroke-linecap="round" opacity="0.80" style="--i:201"/><line class="cn" x1="-34.9" y1="-172.5" x2="-37.8" y2="-186.8" stroke="#339ded" stroke-width="3.2" stroke-linecap="round" opacity="0.78" style="--i:202"/><line class="cn" x1="-30.3" y1="-173.4" x2="-32.9" y2="-188.2" stroke="#329ded" stroke-width="3.2" stroke-linecap="round" opacity="0.80" style="--i:203"/><line class="cn" x1="-25.8" y1="-174.1" x2="-27.8" y2="-188.2" stroke="#319eed" stroke-width="3.2" stroke-linecap="round" opacity="0.78" style="--i:204"/><line class="cn" x1="-21.1" y1="-174.7" x2="-22.6" y2="-187.1" stroke="#309fed" stroke-width="3.2" stroke-linecap="round" opacity="0.74" style="--i:205"/><line class="cn" x1="-16.5" y1="-175.2" x2="-17.8" y2="-188.3" stroke="#2e9fed" stroke-width="3.2" stroke-linecap="round" opacity="0.75" style="--i:206"/><line class="cn" x1="-11.9" y1="-175.6" x2="-12.4" y2="-183.6" stroke="#2da0ee" stroke-width="3.2" stroke-linecap="round" opacity="0.63" style="--i:207"/><line class="cn" x1="-7.2" y1="-175.9" x2="-7.6" y2="-183.9" stroke="#2ca1ee" stroke-width="3.2" stroke-linecap="round" opacity="0.63" style="--i:208"/></g><g aria-hidden="true"><path class="link" data-a="4" data-b="X" d="M162.6 -33.2Q27.4 -40.2 -28.9 -163.5" stroke="#ee635d" pathLength="1" style="--len:1;--i:0"/><path class="link" data-a="6" data-b="12" d="M127.5 106.3Q-2.0 40.2 -137.2 93.5" stroke="#e44d83" pathLength="1" style="--len:1;--i:1"/><path class="link" data-a="8" data-b="11" d="M19.8 164.8Q-18.7 67.1 -102.4 130.6" stroke="#c158a8" pathLength="1" style="--len:1;--i:2"/><path class="link" data-a="1" data-b="4" d="M11.3 -165.6Q36.2 -31.9 165.7 9.7" stroke="#f39128" pathLength="1" style="--len:1;--i:3"/><path class="link" data-a="10" data-b="5" d="M-72.5 149.3Q16.7 42.5 154.9 59.8" stroke="#a661c3" pathLength="1" style="--len:1;--i:4"/><path class="link" data-a="1" data-b="4" d="M4.7 -165.9Q34.8 -32.7 165.9 5.5" stroke="#f39226" pathLength="1" style="--len:1;--i:5"/><path class="link" data-a="13" data-b="5" d="M-149.3 72.5Q1.3 26.7 155.9 57.1" stroke="#876ce0" pathLength="1" style="--len:1;--i:6"/><path class="link" data-a="8" data-b="2" d="M38.1 161.6Q33.7 11.6 129.3 -104.1" stroke="#c656a2" pathLength="1" style="--len:1;--i:7"/><path class="link" data-a="16" data-b="3" d="M-158.5 -49.3Q0.6 -19.5 161.2 -39.6" stroke="#6480e6" pathLength="1" style="--len:1;--i:8"/><path class="link" data-a="22" data-b="8" d="M-70.7 -150.2Q-12.4 3.7 22.5 164.5" stroke="#3e96eb" pathLength="1" style="--len:1;--i:9"/><path class="link" data-a="17" data-b="X" d="M-149.5 -72.1Q-39.9 -52.0 -31.0 -163.1" stroke="#5d84e7" pathLength="1" style="--len:1;--i:10"/><path class="link" data-a="4" data-b="22" d="M164.6 -21.6Q19.5 -34.8 -67.9 -151.5" stroke="#ee6160" pathLength="1" style="--len:1;--i:11"/><path class="link" data-a="10" data-b="9" d="M-42.8 160.4Q-19.7 87.0 -30.6 163.2" stroke="#af5eba" pathLength="1" style="--len:1;--i:12"/><path class="link" data-a="2" data-b="9" d="M125.8 -108.3Q20.6 11.6 -27.8 163.6" stroke="#f07548" pathLength="1" style="--len:1;--i:13"/><path class="link" data-a="13" data-b="20" d="M-148.5 74.2Q-51.6 -12.1 -100.0 -132.5" stroke="#876ce0" pathLength="1" style="--len:1;--i:14"/><path class="link" data-a="1" data-b="8" d="M0.3 -166.0Q11.0 -1.3 38.8 161.4" stroke="#f39325" pathLength="1" style="--len:1;--i:15"/><path class="link" data-a="5" data-b="17" d="M161.8 37.0Q2.5 -8.2 -154.8 -59.9" stroke="#ed546f" pathLength="1" style="--len:1;--i:16"/><path class="link" data-a="14" data-b="2" d="M-165.1 17.3Q-7.5 -18.5 130.8 -102.2" stroke="#7775e3" pathLength="1" style="--len:1;--i:17"/><path class="link" data-a="13" data-b="4" d="M-157.5 52.3Q2.2 11.2 165.6 -12.1" stroke="#816fe1" pathLength="1" style="--len:1;--i:18"/><path class="link" data-a="6" data-b="10" d="M108.2 125.9Q12.3 61.8 -51.5 157.8" stroke="#dc4f8b" pathLength="1" style="--len:1;--i:19"/><path class="link" data-a="7" data-b="1" d="M93.8 137.0Q21.6 -6.1 7.8 -165.8" stroke="#d75191" pathLength="1" style="--len:1;--i:20"/><path class="link" data-a="17" data-b="22" d="M-152.0 -66.7Q-50.2 -50.0 -67.4 -151.7" stroke="#5f83e6" pathLength="1" style="--len:1;--i:21"/><path class="link" data-a="4" data-b="3" d="M166.0 -4.0Q76.8 -19.1 148.4 -74.3" stroke="#ee5d65" pathLength="1" style="--len:1;--i:22"/><path class="link" data-a="X" data-b="16" d="M-10.2 -165.7Q-35.9 -44.7 -159.6 -45.7" stroke="#2da0ee" pathLength="1" style="--len:1;--i:23"/><path class="link" data-a="20" data-b="9" d="M-92.6 -137.7Q-23.7 5.6 -20.8 164.7" stroke="#4592ea" pathLength="1" style="--len:1;--i:24"/><path class="link" data-a="1" data-b="7" d="M55.1 -156.6Q26.5 -1.6 73.5 148.8" stroke="#f28733" pathLength="1" style="--len:1;--i:25"/><path class="link" data-a="12" data-b="1" d="M-125.1 109.1Q-13.1 -9.8 68.9 -151.0" stroke="#9367d7" pathLength="1" style="--len:1;--i:26"/><path class="link" data-a="2" data-b="5" d="M107.3 -126.6Q57.1 -17.4 159.6 45.5" stroke="#f17a42" pathLength="1" style="--len:1;--i:27"/><path class="link" data-a="14" data-b="4" d="M-165.5 12.8Q0.2 7.5 165.9 4.5" stroke="#7676e3" pathLength="1" style="--len:1;--i:28"/><path class="link" data-a="5" data-b="6" d="M155.1 59.3Q75.3 39.2 137.4 93.1" stroke="#ed5074" pathLength="1" style="--len:1;--i:29"/></g><g aria-hidden="true"><polyline class="gene-tick" data-gene="FGFR3" fill="none" points="236.1,-48.2 250.8,-51.3 264.5,-54.1"/><circle class="gene-ping" data-gene="FGFR3" cx="227.3" cy="-46.4" r="9"/><circle class="gene-dot" data-gene="FGFR3" cx="227.3" cy="-46.4" r="5.5"/><text class="gene-label" data-gene="FGFR3" data-chr="4" x="272.4" y="-55.7" text-anchor="start" dominant-baseline="middle">FGFR3</text><polyline class="gene-tick" data-gene="MYC" fill="none" points="28.8,239.3 30.6,254.2 32.2,268.1"/><circle class="gene-ping" data-gene="MYC" cx="27.7" cy="230.3" r="9"/><circle class="gene-dot" data-gene="MYC" cx="27.7" cy="230.3" r="5.5"/><text class="gene-label" data-gene="MYC" data-chr="8" x="33.2" y="276.0" text-anchor="middle" dominant-baseline="middle">MYC</text><polyline class="gene-tick" data-gene="FGFR2" fill="none" points="-105.3,216.8 -111.8,230.3 -117.9,242.9"/><circle class="gene-ping" data-gene="FGFR2" cx="-101.3" cy="208.7" r="9"/><circle class="gene-dot" data-gene="FGFR2" cx="-101.3" cy="208.7" r="5.5"/><text class="gene-label" data-gene="FGFR2" data-chr="10" x="-121.4" y="250.1" text-anchor="end" dominant-baseline="middle">FGFR2</text><polyline class="gene-tick" data-gene="BRCA2" fill="none" points="-216.8,105.3 -230.3,111.8 -242.9,118.0"/><circle class="gene-ping" data-gene="BRCA2" cx="-208.7" cy="101.4" r="9"/><circle class="gene-dot" data-gene="BRCA2" cx="-208.7" cy="101.4" r="5.5"/><text class="gene-label" data-gene="BRCA2" data-chr="13" x="-250.1" y="121.5" text-anchor="end" dominant-baseline="middle">BRCA2</text><polyline class="gene-tick" data-gene="CDH1" fill="none" points="-230.1,-71.6 -244.4,-76.0 -257.8,-80.1"/><circle class="gene-ping" data-gene="CDH1" cx="-221.5" cy="-68.9" r="9"/><circle class="gene-dot" data-gene="CDH1" cx="-221.5" cy="-68.9" r="5.5"/><text class="gene-label" data-gene="CDH1" data-chr="16" x="-265.5" y="-82.5" text-anchor="end" dominant-baseline="middle">CDH1</text><polyline class="gene-tick" data-gene="BRCA1" fill="none" points="-217.1,-104.7 -230.6,-111.2 -243.2,-117.4"/><circle class="gene-ping" data-gene="BRCA1" cx="-209.0" cy="-100.8" r="9"/><circle class="gene-dot" data-gene="BRCA1" cx="-209.0" cy="-100.8" r="5.5"/><text class="gene-label" data-gene="BRCA1" data-chr="17" x="-250.4" y="-120.8" text-anchor="end" dominant-baseline="middle">BRCA1</text></g></svg>
         </div>
       </div>
-      <div class="banner-right">
-        <h3 id="bannerDescTitle" style="display: none;"></h3>
-        <p id="bannerDescText"></p>
-      </div>
-    </div>
-    <!-- 네비게이터를 그리드 아래로 이동 -->
-    <div class="banner-nav">
-      <div class="banner-dots">
-        <span class="banner-dot active" onclick="currentBannerSlide(1)"></span>
-        <span class="banner-dot" onclick="currentBannerSlide(2)"></span>
-        <span class="banner-dot" onclick="currentBannerSlide(3)"></span>
-        <span class="banner-dot" onclick="currentBannerSlide(4)"></span>
-        <span class="banner-dot" onclick="currentBannerSlide(5)"></span>
-      </div>
-    </div>
-  </section>
-
-  <!-- 메인 콘텐츠 -->
-  <main class="content">
-
-    <!-- Latest news: filled from js/news-data.js (same source as news.html) -->
-    <section id="news" class="news-section" data-aos="fade-up">
-      <div class="container">
-        <h2 data-aos="fade-up" data-aos-delay="100">Latest News</h2>
-        <div class="news-list" id="homeNewsMount"></div>
+      <div class="wrap">
+          <section class="hl" aria-labelledby="hl-h" aria-roledescription="carousel">
+            <div class="hl-head">
+              <div class="hl-title-row">
+                <h2 id="hl-h">Research highlights</h2>
+                <a class="hl-all" href="publications.html">All 34 publications</a>
+              </div>
+              <div class="hl-ctrl">
+                <button type="button" class="hl-dot is-active" aria-controls="hl-1" aria-label="Show paper 1: Cancer Research 2026" aria-current="true"></button><button type="button" class="hl-dot" aria-controls="hl-2" aria-label="Show paper 2: Nature 2022"></button><button type="button" class="hl-dot" aria-controls="hl-3" aria-label="Show paper 3: Cancer Cell 2019"></button><button type="button" class="hl-dot" aria-controls="hl-4" aria-label="Show paper 4: J. Exp. Med 2023"></button><button type="button" class="hl-dot" aria-controls="hl-5" aria-label="Show paper 5: Cell Rep 2023"></button>
+                <button type="button" class="hl-pause" aria-pressed="false" aria-label="Pause highlights"><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="7" y="5" width="3.5" height="14" rx="1"/><rect x="13.5" y="5" width="3.5" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg></button>
+              </div>
+            </div>
+            <div class="hl-stage">
+              <article class="hl-item is-active" id="hl-1" data-genes="FGFR3" aria-roledescription="slide" aria-label="1 of 5">
+                <a class="hl-thumb" href="https://pubmed.ncbi.nlm.nih.gov/41460723/" tabindex="-1" aria-hidden="true" rel="noopener"><img src="images/research/highlight-1-thumb.jpg" alt="" width="320" height="430" decoding="async"></a>
+                <div class="hl-main">
+                  <p class="hl-venue"><span class="journal">Cancer Research</span> 2026</p>
+                  <h3 class="hl-title"><a href="https://pubmed.ncbi.nlm.nih.gov/41460723/" rel="noopener">C-terminal truncation and fusion partner determine oncogenicity of FGFR3</a></h3>
+                  <p class="hl-authors">Yemelyanenko J*, <b>Bhin J</b>*, et al.</p>
+                  <p class="hl-gene"><span class="hl-pin" aria-hidden="true"></span><i>FGFR3</i> on the genome ring</p>
+                </div>
+                <div class="hl-side">
+                  <p class="hl-abstract is-clamped" id="hl-abs-1">Genomic alterations affecting components of the fibroblast growth factor (FGF) signaling axis can trigger aberrant pathway activation and tumor development. Genomic truncation of the FGF receptor 2 (FGFR2) exon 18 (E18) disrupts the FGFR2 carboxy (C)-terminal tail, acting as a potent driver alteration across multiple tumor types. In this study, we analyzed human oncogenomic datasets to reveal that E18 truncations are similarly prevalent in FGFR3, an FGFR2 paralog. FGFR3 E18 truncations primarily occur due to rearrangements (RE) that involve transforming acidic coiled-coil-containing protein 3 (TACC3), resulting in FGFR3ΔE18-TACC3 gene fusions. In contrast to E18-truncated FGFR2, functional in vitro and in vivo examination of Fgfr3 variants demonstrated that the truncation of Fgfr3 E18 is insufficient to promote oncogenic activity in cell lines or in the lungs and mammary glands of mice. Only the combination of an Fgfr3 E18 truncation with a RE partner gene that encodes a receptor-dimerizing domain resulted in the development of tumors, which were sensitive to FGFR inhibition. Overall, these findings suggest that patients with cancers that are positive for rearranged FGFR3, resulting in E18 truncation and a fusion to dimerizing partners, should be considered for FGFR-targeted therapies.</p>
+                  <button type="button" class="text-btn hl-more" aria-expanded="false" aria-controls="hl-abs-1">Read full abstract <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+                </div>
+              </article>
+              <article class="hl-item" id="hl-2" data-genes="FGFR2" aria-roledescription="slide" aria-label="2 of 5" aria-hidden="true">
+                <a class="hl-thumb" href="https://www.nature.com/articles/s41586-022-05066-5" tabindex="-1" aria-hidden="true" rel="noopener"><img src="images/research/highlight-2-thumb.jpg" alt="" width="320" height="430" decoding="async" loading="lazy"></a>
+                <div class="hl-main">
+                  <p class="hl-venue"><span class="journal">Nature</span> 2022</p>
+                  <h3 class="hl-title"><a href="https://www.nature.com/articles/s41586-022-05066-5" rel="noopener" tabindex="-1">Truncated FGFR2 is a clinically actionable oncogene in multiple cancers</a></h3>
+                  <p class="hl-authors">Zingg D*, <b>Bhin J</b>*, et al.</p>
+                  <p class="hl-gene"><span class="hl-pin" aria-hidden="true"></span><i>FGFR2</i> on the genome ring</p>
+                </div>
+                <div class="hl-side">
+                  <p class="hl-abstract is-clamped" id="hl-abs-2">Somatic hotspot mutations and structural amplifications and fusions that affect fibroblast growth factor receptor 2 (encoded by FGFR2) occur in multiple types of cancer. However, clinical responses to FGFR inhibitors have remained variable, emphasizing the need to better understand which FGFR2 alterations are oncogenic and therapeutically targetable. Here we apply transposon-based screening and tumour modelling in mice, and find that the truncation of exon 18 (E18) of Fgfr2 is a potent driver mutation. Human oncogenomic datasets revealed a diverse set of FGFR2 alterations, including rearrangements, E1–E17 partial amplifications, and E18 nonsense and frameshift mutations, each causing the transcription of E18-truncated FGFR2 (FGFR2ΔE18). Functional in vitro and in vivo examination of a compendium of FGFR2ΔE18 and full-length variants pinpointed FGFR2-E18 truncation as single-driver alteration in cancer. By contrast, the oncogenic competence of FGFR2 full-length amplifications depended on a distinct landscape of cooperating driver genes. This suggests that genomic alterations that generate stable FGFR2ΔE18 variants are actionable therapeutic targets, which we confirmed in preclinical mouse and human tumour models, and in a clinical trial. We propose that cancers containing any FGFR2 variant with a truncated E18 should be considered for FGFR-targeted therapies.</p>
+                  <button type="button" class="text-btn hl-more" aria-expanded="false" aria-controls="hl-abs-2" tabindex="-1">Read full abstract <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+                </div>
+              </article>
+              <article class="hl-item" id="hl-3" data-genes="CDH1" aria-roledescription="slide" aria-label="3 of 5" aria-hidden="true">
+                <a class="hl-thumb" href="https://www.sciencedirect.com/science/article/pii/S1535610818305749" tabindex="-1" aria-hidden="true" rel="noopener"><img src="images/research/highlight-3-thumb.jpg" alt="" width="320" height="430" decoding="async" loading="lazy"></a>
+                <div class="hl-main">
+                  <p class="hl-venue"><span class="journal">Cancer Cell</span> 2019</p>
+                  <h3 class="hl-title"><a href="https://www.sciencedirect.com/science/article/pii/S1535610818305749" rel="noopener" tabindex="-1">Proteogenomic characterization of human early-onset gastric cancer</a></h3>
+                  <p class="hl-authors">Mun DG*, <b>Bhin J</b>*, et al.</p>
+                  <p class="hl-gene"><span class="hl-pin" aria-hidden="true"></span><i>CDH1</i> on the genome ring</p>
+                </div>
+                <div class="hl-side">
+                  <p class="hl-abstract is-clamped" id="hl-abs-3">We report proteogenomic analysis of diffuse gastric cancers (GCs) in young populations. Phosphoproteome data elucidated signaling pathways associated with somatic mutations based on mutation-phosphorylation correlations. Moreover, correlations between mRNA and protein abundances provided potential oncogenes and tumor suppressors associated with patient survival. Furthermore, integrated clustering of mRNA, protein, phosphorylation, and N-glycosylation data identified four subtypes of diffuse GCs. Distinguishing these subtypes was possible by proteomic data. Four subtypes were associated with proliferation, immune response, metabolism, and invasion, respectively; and associations of the subtypes with immune- and invasion-related pathways were identified mainly by phosphorylation and N-glycosylation data. Therefore, our proteogenomic analysis provides additional information beyond genomic analyses, which can improve understanding of cancer biology and patient stratification in diffuse GCs.</p>
+                  <button type="button" class="text-btn hl-more" aria-expanded="false" aria-controls="hl-abs-3" tabindex="-1">Read full abstract <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+                </div>
+              </article>
+              <article class="hl-item" id="hl-4" data-genes="MYC" aria-roledescription="slide" aria-label="4 of 5" aria-hidden="true">
+                <a class="hl-thumb" href="https://rupress.org/jem/article/220/11/e20211743/276218" tabindex="-1" aria-hidden="true" rel="noopener"><img src="images/research/highlight-4-thumb.jpg" alt="" width="320" height="430" decoding="async" loading="lazy"></a>
+                <div class="hl-main">
+                  <p class="hl-venue"><span class="journal">J. Exp. Med</span> 2023</p>
+                  <h3 class="hl-title"><a href="https://rupress.org/jem/article/220/11/e20211743/276218" rel="noopener" tabindex="-1">MYC is a clinically significant determinant of mTOR inhibitor resistance in breast cancer</a></h3>
+                  <p class="hl-authors"><b>Bhin J</b>*, Yemelyanenko J*, et al.</p>
+                  <p class="hl-gene"><span class="hl-pin" aria-hidden="true"></span><i>MYC</i> on the genome ring</p>
+                </div>
+                <div class="hl-side">
+                  <p class="hl-abstract is-clamped" id="hl-abs-4">Targeting the PI3K–AKT–mTOR pathway is a promising therapeutic strategy for breast cancer treatment. However, low response rates and development of resistance to PI3K–AKT–mTOR inhibitors remain major clinical challenges. Here, we show that MYC activation drives resistance to mTOR inhibitors (mTORi) in breast cancer. Multiomic profiling of mouse invasive lobular carcinoma (ILC) tumors revealed recurrent Myc amplifications in tumors that acquired resistance to the mTORi AZD8055. MYC activation was associated with biological processes linked to mTORi response and counteracted mTORi-induced translation inhibition by promoting translation of ribosomal proteins. In vitro and in vivo induction of MYC conferred mTORi resistance in mouse and human breast cancer models. Conversely, AZD8055-resistant ILC cells depended on MYC, as demonstrated by the synergistic effects of mTORi and MYCi combination treatment. Notably, MYC status was significantly associated with poor response to everolimus therapy in metastatic breast cancer patients. Thus, MYC is a clinically relevant driver of mTORi resistance that may stratify breast cancer patients for mTOR-targeted therapies.</p>
+                  <button type="button" class="text-btn hl-more" aria-expanded="false" aria-controls="hl-abs-4" tabindex="-1">Read full abstract <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+                </div>
+              </article>
+              <article class="hl-item" id="hl-5" data-genes="BRCA1 BRCA2" aria-roledescription="slide" aria-label="5 of 5" aria-hidden="true">
+                <a class="hl-thumb" href="https://www.sciencedirect.com/science/article/pii/S2211124723005491" tabindex="-1" aria-hidden="true" rel="noopener"><img src="images/research/highlight-5-thumb.jpg" alt="" width="320" height="430" decoding="async" loading="lazy"></a>
+                <div class="hl-main">
+                  <p class="hl-venue"><span class="journal">Cell Rep</span> 2023</p>
+                  <h3 class="hl-title"><a href="https://www.sciencedirect.com/science/article/pii/S2211124723005491" rel="noopener" tabindex="-1">Multi-omics analysis reveals distinct non-reversion mechanisms of PARP inhibitor resistance in BRCA1- versus BRCA2-deficient mammary tumors</a></h3>
+                  <p class="hl-authors"><b>Bhin J</b>*, Paes Dias M*, et al.</p>
+                  <p class="hl-gene"><span class="hl-pin" aria-hidden="true"></span><i>BRCA1</i> and <i>BRCA2</i> on the genome ring</p>
+                </div>
+                <div class="hl-side">
+                  <p class="hl-abstract is-clamped" id="hl-abs-5">BRCA1 and BRCA2 both function in DNA double-strand break repair by homologous recombination (HR). Due to their HR defect, BRCA1/2-deficient cancers are sensitive to poly(ADP-ribose) polymerase inhibitors (PARPis), but they eventually acquire resistance. Preclinical studies yielded several PARPi resistance mechanisms that do not involve BRCA1/2 reactivation, but their relevance in the clinic remains elusive. To investigate which BRCA1/2-independent mechanisms drive spontaneous resistance in vivo, we combine molecular profiling with functional analysis of HR of matched PARPi-naive and PARPi-resistant mouse mammary tumors harboring large intragenic deletions that prevent reactivation of BRCA1/2. We observe restoration of HR in 62% of PARPi-resistant BRCA1-deficient tumors but none in the PARPi-resistant BRCA2-deficient tumors. Moreover, we find that 53BP1 loss is the prevalent resistance mechanism in HR-proficient BRCA1-deficient tumors, whereas resistance in BRCA2-deficient tumors is mainly induced by PARG loss. Furthermore, combined multi-omics analysis identifies additional genes and pathways potentially involved in modulating PARPi response.</p>
+                  <button type="button" class="text-btn hl-more" aria-expanded="false" aria-controls="hl-abs-5" tabindex="-1">Read full abstract <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+                </div>
+              </article>
+            </div>
+          </section>
       </div>
     </section>
 
-    <!--  CGI Life: first 3 items from galleries data (see js/galleries-data.js) -->
-    <section id="CGI-today" class="CGI-today-section" data-aos="fade-up">
-      <div class="container">
-        <h2 data-aos="fade-up" data-aos-delay="100">CGI Life</h2>
-        <div class="today-grid" id="cgiLifeGrid"></div>
+    <section class="section" aria-labelledby="news-h">
+      <div class="wrap split">
+        <div>
+          <h2 id="news-h">News</h2>
+          <ul class="news-list" id="homeNewsMount"></ul>
+          <a class="more-link" href="news.html">All news</a>
+        </div>
+        <div>
+          <h2>Lab life</h2>
+          <div class="life-grid" id="cgiLifeGrid"></div>
+          <a class="more-link" href="galleries.html">All galleries</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="themes-h">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="themes-h">What we study</h2>
+          <a class="more-link" href="research.html">Read about each theme</a>
+        </div>
+        <ul class="themes">
+<li class="theme"><h3>Genomics</h3><p>Cancer genome complexity and evolution</p><ul><li>Evolutionary trajectories of the cancer genome</li><li>Novel cancer drivers from structural variations</li><li>AI-based cancer driver discovery</li><li>Trait-wide causal variant identification</li></ul></li>
+<li class="theme"><h3>Transcriptomics</h3><p>Cancer transcriptome complexity and ecosystem</p><ul><li>Single-cell and spatial transcriptomic analysis</li><li>TME state discovery via bulk tumor deconvolution</li><li>Isoform-level RNA complexity in cancer</li></ul></li>
+<li class="theme"><h3>Multi-omics</h3><p>Multi-omics approaches to resolve cancer complexity</p><ul><li>Proteogenomic characterization of cancer</li><li>Mechanisms and determinants of drug resistance</li><li>Multi-omics integration frameworks</li></ul></li>
+</ul>
       </div>
     </section>
   </main>
 
-  <!-- 푸터 -->
-  <footer class="site-footer" data-aos="fade-up">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo" data-aos="fade-up" data-aos-delay="100">
-          <h3>CGI</h3>
-          <p>Cancer Genomics & Intelligence Laboratory</p>
-          <p>College of Medicine, Yonsei University</p>
-          <p>by Professor Jinhyuk Bhin</p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="images/brand/logo-96-dark.png" alt="" width="40" height="40" loading="lazy">
+            <span>
+              <span class="brand-name" translate="no">Bhin Lab</span>
+              <span class="brand-sub">Cancer Genomics &amp; Intelligence Laboratory</span>
+            </span>
+          </a>
+          <p class="affil">Department of Biomedical Systems Informatics<br>Yonsei University College of Medicine<br>Led by Professor Jinhyuk Bhin</p>
         </div>
-        <div class="footer-links" data-aos="fade-up" data-aos-delay="200">
-          <h4>Quick Links</h4>
+        <div>
+          <h2>Explore</h2>
           <ul>
-            <li><a href="index.html#about">About Us</a></li>
             <li><a href="research.html">Research</a></li>
-            <li><a href="news.html">News</a></li>
+            <li><a href="members.html">Members</a></li>
             <li><a href="publications.html">Publications</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="galleries.html">Galleries</a></li>
           </ul>
         </div>
-        <div class="footer-contact" data-aos="fade-up" data-aos-delay="300">
-          <h4>Contact</h4>
-          <p>Email: jbhin@yuhs.ac</p>
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:jbhin@yuhs.ac">jbhin@yuhs.ac</a></li>
+            <li><a href="https://github.com/CPMlab" rel="noopener">GitHub: CPMlab</a></li>
+            <li><a href="contact.html">Address and map</a></li>
+            <li><a href="positions.html">Open positions</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-bottom" data-aos="fade-up" data-aos-delay="400">
-        <p>&copy; 2025 Website developed by Sejung. Logo designed by Hyeonjin. All rights reserved.</p>
+      <div class="footer-base">
+        <p>&copy; 2026 Bhin Lab, Yonsei University College of Medicine.</p>
+        <p>Website developed by Sejung. Logo designed by Hyeonjin.</p>
+        <button class="theme-toggle" type="button">
+          <span class="to-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>Switch to dark theme</span>
+          <span class="to-light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg>Switch to light theme</span>
+        </button>
       </div>
     </div>
   </footer>
+  <div class="spectrum" aria-hidden="true"></div>
 
-  <!-- 로딩 스크립트 -->
-  <script>
-    (function () {
-      const loadingOverlay = document.getElementById('loadingOverlay');
-      const siteHeader = document.querySelector('.site-header');
-      const skipLoading = sessionStorage.getItem('skipIndexLoading') === 'true';
-
-      if (skipLoading) {
-        sessionStorage.removeItem('skipIndexLoading');
-        if (siteHeader) {
-          siteHeader.classList.add('show');
-        }
-        if (loadingOverlay) {
-          loadingOverlay.style.display = 'none';
-        }
-        return;
-      }
-
-      // 페이지 로드 완료 후 로딩 오버레이 숨김
-      window.addEventListener('load', function () {
-        if (!loadingOverlay || !siteHeader) return;
-
-        setTimeout(function () {
-          // 줌인 애니메이션 시작
-          loadingOverlay.classList.add('zoom-out');
-
-          // 헤더 표시 (로딩 시작과 동시에)
-          siteHeader.classList.add('show');
-
-          // 애니메이션 완료 후 오버레이 완전히 숨김
-          setTimeout(function () {
-            loadingOverlay.style.display = 'none';
-          }, 1000); // 줌아웃 애니메이션 1초 후 숨김
-        }, 2000); // 초기 로딩 2초
-      });
-    })();
-  </script>
-
-  <script src="js/news-data.js"></script>
-  <!-- Galleries data (single source: index shows first 3, galleries uses full list) -->
-  <script src="js/galleries-data.js"></script>
-  <!-- AOS 라이브러리 스크립트 -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    // AOS 초기화
-    AOS.init({
-      duration: 800,
-      easing: 'ease-out',
-      once: true,
-      offset: 100,
-      delay: 0,
-      anchorPlacement: 'top-bottom'
-    });
-
-    // 현재 페이지 메뉴 활성화
-    document.addEventListener('DOMContentLoaded', function () {
-      const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-      const menuLinks = document.querySelectorAll('.main-nav a');
-
-      menuLinks.forEach(link => {
-        const href = link.getAttribute('href');
-        if (href === currentPage || (currentPage === 'index.html' && href === 'index.html')) {
-          link.classList.add('active');
-        }
-      });
-    });
-
-    // 메인 배너 슬라이더 + 설명 동기화
-    let currentBannerIndex = 0;
-    const bannerSlides = document.querySelectorAll('.banner-slide');
-    const bannerDots = document.querySelectorAll('.banner-dot');
-    const bannerDescTitle = document.getElementById('bannerDescTitle');
-    const bannerDescText = document.getElementById('bannerDescText');
-    let bannerInterval;
-
-    const bannerDescriptions = [
-        {
-        title: '<strong>C-Terminal Truncation and Fusion Partner Determine Oncogenicity of FGFR3</strong>',
-        text: `
-              <div style="color: #ffffff; line-height: 1.7;">
-                <a href="https://pubmed.ncbi.nlm.nih.gov/41460723/" 
-                  target="_blank" 
-                  style="color: #ffffff; text-decoration: underline; font-size: 0.95rem; display: block; margin-bottom: 1.5rem;">
-                  Yemelyanenko J* and Bhin J* et al., <em>Cancer Research </em> (2026)
-                </a>
-
-                <div style="font-size: 0.9rem; line-height: 1.7; color: rgba(255, 255, 255, 0.9); text-align: justify; margin-top: 3rem;">
-                  Genomic alterations affecting components of the fibroblast growth factor (FGF) signaling axis can trigger aberrant pathway activation and tumor development. Genomic truncation of the FGF receptor 2 (FGFR2) exon 18 (E18) disrupts the      FGFR2 carboxy (C)-terminal tail, acting as a potent driver alteration across multiple tumor types. In this study, we analyzed human oncogenomic datasets to reveal that E18 truncations are similarly prevalent in FGFR3, an FGFR2 paralog. FGFR3 E18 truncations primarily occur due to rearrangements (RE) that involve transforming acidic coiled-coil-containing protein 3 (TACC3), resulting in FGFR3ΔE18-TACC3 gene fusions. In contrast to E18-truncated FGFR2, functional in vitro and in vivo examination of Fgfr3 variants demonstrated that the truncation of Fgfr3 E18 is insufficient to promote oncogenic activity in cell lines or in the lungs and mammary glands of mice. Only the combination of an Fgfr3 E18 truncation with a RE partner gene that encodes a receptor-dimerizing domain resulted in the development of tumors, which were sensitive to FGFR inhibition. Overall, these findings suggest that patients with cancers that are positive for rearranged FGFR3, resulting in E18 truncation and a fusion to dimerizing partners, should be considered for FGFR-targeted therapies.
-                </div>
-              </div>
-            `
-      },
-      {
-        title: '<strong>Truncated FGFR2 is a clinically actionable oncogene in multiple cancers</strong>',
-        text: `
-              <div style="color: #ffffff; line-height: 1.7;">
-                <a href="https://www.nature.com/articles/s41586-022-05066-5" 
-                  target="_blank" 
-                  style="color: #ffffff; text-decoration: underline; font-size: 0.95rem; display: block; margin-bottom: 1.5rem;">
-                  D. Zingg* and J. Bhin* et al., <em>Nature</em> (2022)
-                </a>
-
-                <div style="font-size: 0.9rem; line-height: 1.7; color: rgba(255, 255, 255, 0.9); text-align: justify; margin-top: 3rem;">
-                  Somatic hotspot mutations and structural amplifications and fusions that affect fibroblast 
-                  growth factor receptor 2 (encoded by FGFR2) occur in multiple types of cancer. However, 
-                  clinical responses to FGFR inhibitors have remained variable, emphasizing the need to better 
-                  understand which FGFR2 alterations are oncogenic and therapeutically targetable. Here we apply 
-                  transposon-based screening and tumour modelling in mice, and find that the truncation of exon 18 
-                  (E18) of Fgfr2 is a potent driver mutation. Human oncogenomic datasets revealed a diverse set of 
-                  FGFR2 alterations, including rearrangements, E1–E17 partial amplifications, and E18 nonsense and 
-                  frameshift mutations, each causing the transcription of E18-truncated FGFR2 (FGFR2ΔE18). 
-                  Functional in vitro and in vivo examination of a compendium of FGFR2ΔE18 and full-length variants 
-                  pinpointed FGFR2-E18 truncation as single-driver alteration in cancer. By contrast, the oncogenic 
-                  competence of FGFR2 full-length amplifications depended on a distinct landscape of cooperating 
-                  driver genes. This suggests that genomic alterations that generate stable FGFR2ΔE18 variants are 
-                  actionable therapeutic targets, which we confirmed in preclinical mouse and human tumour models, 
-                  and in a clinical trial. We propose that cancers containing any FGFR2 variant with a truncated 
-                  E18 should be considered for FGFR-targeted therapies.
-                </div>
-              </div>
-            `
-      },
-      {
-        title: '<strong>Proteogenomic Characterization of Human Early-Onset Gastric Cancer</strong>',
-        text: `
-              <div style="color: #ffffff; line-height: 1.7;">
-                <a href="https://www.sciencedirect.com/science/article/pii/S1535610818305749?via%3Dihub" 
-                  target="_blank" 
-                  style="color: #ffffff; text-decoration: underline; font-size: 0.95rem; display: block; margin-bottom: 1.5rem;">
-                  D. Moon* and J. Bhin* et al., <em>Cancer Cell</em> (2019)
-                </a>
-
-                <div style="font-size: 0.9rem; line-height: 1.7; color: rgba(255, 255, 255, 0.9); text-align: justify; margin-top: 3rem;">
-                  We report proteogenomic analysis of diffuse gastric cancers (GCs) in young populations. Phosphoproteome data elucidated signaling pathways associated with somatic mutations based on mutation-phosphorylation correlations. Moreover, correlations between mRNA and protein abundances provided potential oncogenes and tumor suppressors associated with patient survival. Furthermore, integrated clustering of mRNA, protein, phosphorylation, and N-glycosylation data identified four subtypes of diffuse GCs. Distinguishing these subtypes was possible by proteomic data. Four subtypes were associated with proliferation, immune response, metabolism, and invasion, respectively; and associations of the subtypes with immune- and invasion-related pathways were identified mainly by phosphorylation and N-glycosylation data. Therefore, our proteogenomic analysis provides additional information beyond genomic analyses, which can improve understanding of cancer biology and patient stratification in diffuse GCs.
-                </div>
-              </div>
-            `
-      },
-      {
-        title: '<strong>MYC is a clinically significant driver of mTOR inhibitor resistance in breast cancer</strong>',
-        text: `
-              <div style="color: #ffffff; line-height: 1.7;">
-                <a href="https://rupress.org/jem/article/220/11/e20211743/276218" 
-                  target="_blank" 
-                  style="color: #ffffff; text-decoration: underline; font-size: 0.95rem; display: block; margin-bottom: 1.5rem;">
-                  J. Bhin* and Yemelanenko* et al., <em>J. Exp. Med.</em> (2023)
-                </a>
-
-                <div style="font-size: 0.9rem; line-height: 1.7; color: rgba(255, 255, 255, 0.9); text-align: justify; margin-top: 3rem;">
-                  Targeting the PI3K–AKT–mTOR pathway is a promising therapeutic strategy for breast cancer treatment. However, low response rates and development of resistance to PI3K–AKT–mTOR inhibitors remain major clinical challenges. Here, we show that MYC activation drives resistance to mTOR inhibitors (mTORi) in breast cancer. Multiomic profiling of mouse invasive lobular carcinoma (ILC) tumors revealed recurrent Myc amplifications in tumors that acquired resistance to the mTORi AZD8055. MYC activation was associated with biological processes linked to mTORi response and counteracted mTORi-induced translation inhibition by promoting translation of ribosomal proteins. In vitro and in vivo induction of MYC conferred mTORi resistance in mouse and human breast cancer models. Conversely, AZD8055-resistant ILC cells depended on MYC, as demonstrated by the synergistic effects of mTORi and MYCi combination treatment. Notably, MYC status was significantly associated with poor response to everolimus therapy in metastatic breast cancer patients. Thus, MYC is a clinically relevant driver of mTORi resistance that may stratify breast cancer patients for mTOR-targeted therapies.
-                </div>
-              </div>
-            `
-      },
-      {
-        title: '<strong>Multi-omics analysis reveals distinct non-reversion mechanisms of PARPi resistance in BRCA1- versus BRCA2-deficient mammary tumors</strong>',
-        text: `
-              <div style="color: #ffffff; line-height: 1.7;">
-                <a href="https://www.sciencedirect.com/science/article/pii/S2211124723005491?via%3Dihub" 
-                  target="_blank" 
-                  style="color: #ffffff; text-decoration: underline; font-size: 0.95rem; display: block; margin-bottom: 1.5rem;">
-                  J. Bhin* and Dias* et al., <em>Cell Reports</em> (2023)
-                </a>
-
-                <div style="font-size: 0.9rem; line-height: 1.7; color: rgba(255, 255, 255, 0.9); text-align: justify; margin-top: 3rem;">
-                  BRCA1 and BRCA2 both function in DNA double-strand break repair by homologous recombination (HR). Due to their HR defect, BRCA1/2-deficient cancers are sensitive to poly(ADP-ribose) polymerase inhibitors (PARPis), but they eventually acquire resistance. Preclinical studies yielded several PARPi resistance mechanisms that do not involve BRCA1/2 reactivation, but their relevance in the clinic remains elusive. To investigate which BRCA1/2-independent mechanisms drive spontaneous resistance in vivo, we combine molecular profiling with functional analysis of HR of matched PARPi-naive and PARPi-resistant mouse mammary tumors harboring large intragenic deletions that prevent reactivation of BRCA1/2. We observe restoration of HR in 62% of PARPi-resistant BRCA1-deficient tumors but none in the PARPi-resistant BRCA2-deficient tumors. Moreover, we find that 53BP1 loss is the prevalent resistance mechanism in HR-proficient BRCA1-deficient tumors, whereas resistance in BRCA2-deficient tumors is mainly induced by PARG loss. Furthermore, combined multi-omics analysis identifies additional genes and pathways potentially involved in modulating PARPi response.
-                </div>
-              </div>
-            `
-      }
-    ];
-
-    function updateBannerDescription(index) {
-      const { title, text } = bannerDescriptions[index] || bannerDescriptions[0];
-
-      // 텍스트 페이드 아웃
-      bannerDescTitle.style.opacity = '0';
-      bannerDescText.style.opacity = '0';
-
-      // 500ms 후 텍스트 변경하고 페이드 인
-      setTimeout(() => {
-        bannerDescTitle.innerHTML = title;
-        bannerDescText.innerHTML = text;
-        // 제목이 비어있으면 숨김
-        if (!title || title.trim() === '') {
-          bannerDescTitle.style.display = 'none';
-        } else {
-          bannerDescTitle.style.display = 'block';
-        }
-        bannerDescTitle.style.opacity = '1';
-        bannerDescText.style.opacity = '1';
-      }, 500);
-    }
-
-    function showBannerSlide(index) {
-      bannerSlides.forEach(slide => slide.classList.remove('active'));
-      bannerDots.forEach(dot => dot.classList.remove('active'));
-      bannerSlides[index].classList.add('active');
-      bannerDots[index].classList.add('active');
-      updateBannerDescription(index);
-    }
-
-    function currentBannerSlide(index) {
-      currentBannerIndex = index - 1;
-      showBannerSlide(currentBannerIndex);
-      resetBannerTimer();
-    }
-
-    function resetBannerTimer() {
-      clearInterval(bannerInterval);
-      startBannerTimer();
-    }
-
-    function startBannerTimer() {
-      bannerInterval = setInterval(() => {
-        currentBannerIndex = (currentBannerIndex + 1) % bannerSlides.length;
-        showBannerSlide(currentBannerIndex);
-      }, 4000);
-    }
-
-    document.addEventListener('DOMContentLoaded', function () {
-      var homeNews = document.getElementById('homeNewsMount');
-      if (homeNews && window.fillNewsListHome) {
-        window.fillNewsListHome(homeNews);
-        if (typeof AOS !== 'undefined') {
-          AOS.refresh();
-        }
-      }
-
-      // CGI Life: render first 3 from galleries data
-      var grid = document.getElementById('cgiLifeGrid');
-      if (grid && window.GALLERIES_DATA && window.GALLERIES_DATA.length > 0) {
-        var items = window.GALLERIES_DATA.slice(0, 3);
-        var delays = [200, 300, 400];
-        items.forEach(function (ev, i) {
-          var thumb = ev.images && ev.images[0] ? ev.images[0] : '';
-          var title = ev.title || '';
-          var titleOneLine = title.replace(/\n/g, ' ');
-          var date = ev.date || '';
-          var div = document.createElement('div');
-          div.className = 'today-item';
-          div.setAttribute('data-aos', 'fade-up');
-          div.setAttribute('data-aos-delay', delays[i]);
-          div.onclick = function () { window.location.href = 'galleries.html'; };
-          div.innerHTML =
-            '<div class="today-image">' +
-              '<img src="' + thumb + '" alt="' + titleOneLine.replace(/"/g, '&quot;') + '" class="today-img" onerror="this.style.display=\'none\'; if(this.nextElementSibling) this.nextElementSibling.style.display=\'flex\';">' +
-              '<div class="image-placeholder" style="display: none;">' + titleOneLine.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>' +
-            '</div>' +
-            '<h3>' + title.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>') + '</h3>' +
-            '<span class="date">' + date.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</span>';
-          grid.appendChild(div);
-        });
-      }
-
-      // 초기 텍스트 설정
-      updateBannerDescription(0);
-      startBannerTimer();
-      const dots = document.querySelectorAll('.banner-dot');
-      dots.forEach((dot, idx) => {
-        dot.addEventListener('click', function (e) {
-          e.preventDefault();
-          e.stopPropagation();
-          currentBannerSlide(idx + 1);
-        });
-      });
-
-      // 모바일 메뉴 토글 기능
-      const mobileToggle = document.querySelector('.mobile-menu-toggle');
-      const mobileDropdown = document.querySelector('.mobile-dropdown');
-      if (mobileToggle && mobileDropdown) {
-        mobileToggle.addEventListener('click', function () {
-          mobileDropdown.classList.toggle('active');
-        });
-        document.addEventListener('click', function (e) {
-          if (!mobileToggle.contains(e.target) && !mobileDropdown.contains(e.target)) {
-            mobileDropdown.classList.remove('active');
-          }
-        });
-      }
-
-    });
-  </script>
-  <script src="js/site-scroll.js"></script>
+  <script src="js/site.js?v=20261127w" defer></script>
+  <script src="js/flow.js?v=20261127w" defer></script>
+  <script src="js/news-data.js?v=20261127w"></script>
+  <script src="js/galleries-data.js?v=20261127w"></script>
+  <script src="js/galleries.js?v=20261127w"></script>
+  <script>window.fillNewsListHome(document.getElementById('homeNewsMount'));</script>
+  <script src="js/highlights.js?v=20261127w"></script>
 </body>
-
 </html>

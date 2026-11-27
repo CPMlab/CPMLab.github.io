@@ -1,988 +1,286 @@
 <!DOCTYPE html>
-
-
-<html lang="ko">
-
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <script>try{if(localStorage.getItem("color-scheme")==="light")document.querySelector('meta[name="color-scheme"]').content="light"}catch(e){}</script>
+  <title>Members · Bhin Lab, Yonsei University</title>
+  <meta name="description" content="Meet Professor Jinhyuk Bhin and the researchers of the Cancer Genomics &amp; Intelligence Laboratory at Yonsei University College of Medicine.">
+  <link rel="canonical" href="https://cgi.yonsei.ac.kr/members.html">
+  <meta name="theme-color" content="#0a1122">
 
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bhin Lab · Cancer Genomics &amp; Intelligence">
+  <meta property="og:title" content="Members · Bhin Lab, Yonsei University">
+  <meta property="og:description" content="Meet Professor Jinhyuk Bhin and the researchers of the Cancer Genomics &amp; Intelligence Laboratory at Yonsei University College of Medicine.">
+  <meta property="og:url" content="https://cgi.yonsei.ac.kr/members.html">
+  <meta property="og:image" content="https://cgi.yonsei.ac.kr/images/brand/og.png">
+  <meta name="twitter:card" content="summary_large_image">
 
-    <meta charset="UTF-8">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <title>Members - CGI</title>
-
-
-
-
-
-    <!-- 파비콘 설정 -->
-
-
-    <link rel="icon" type="image/x-icon" href="images/logo_251125.png">
-
-
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-
-
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-
-
-
-
-
-    <link rel="stylesheet" href="style.css?v=2025012808">
-
-
-    <link rel="stylesheet" href="subpage.css?v=2026091101">
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
-
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/site.css?v=20261127w">
 </head>
-
-
 <body>
-
-
-    <!-- 헤더 -->
-
-
-    <header class="site-header">
-
-
-        <div class="header-container">
-
-
-            <div class="logo">
-
-
-                <a href="index.html">
-
-
-                    <img src="images/logo_251125.png" alt="로고" class="logo-image" onerror="this.style.display='none';">
-
-
-                    <div>
-
-
-                        <h1>Bhin lab</h1>
-
-
-                        <p class="lab-subtitle">Cancer Genomics & Intelligence</p>
-
-
-                    </div>
-
-
-                </a>
-
-
-            </div>
-
-
-            <nav class="main-nav">
-
-
-                <ul>
-
-
-                    <li><a href="research.html">Research</a></li>
-
-
-                    <li><a href="members.html" class="active">Members</a></li>
-
-
-                    <li><a href="publications.html">Publications</a></li>
-
-
-                    <li><a href="news.html">News</a></li>
-
-
-                    <li><a href="positions.html">Positions</a></li>
-
-
-                    <li><a href="contact.html">Contact</a></li>
-
-
-                    <li><a href="galleries.html">Galleries</a></li>
-
-
-                </ul>
-
-
-            </nav>
-
-
-
-
-
-            <!-- 모바일 메뉴 버튼 -->
-
-
-            <div class="mobile-menu-toggle">
-
-
-                <span></span>
-
-
-                <span></span>
-
-
-                <span></span>
-
-
-            </div>
-
-
-
-
-
-            <!-- 모바일 드롭다운 메뉴 -->
-
-
-            <div class="mobile-dropdown">
-
-
-                <ul>
-
-
-                    <li><a href="research.html">Research</a></li>
-
-
-                    <li><a href="members.html">Members</a></li>
-
-
-                    <li><a href="publications.html">Publications</a></li>
-
-
-                    <li><a href="news.html">News</a></li>
-
-
-                    <li><a href="positions.html">Positions</a></li>
-
-
-                    <li><a href="contact.html">Contact</a></li>
-
-
-                    <li><a href="galleries.html">Galleries</a></li>
-
-
-                </ul>
-
-
-            </div>
-
-
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img class="logo-for-light" src="images/brand/logo-96.png" alt="" width="40" height="40">
+        <img class="logo-for-dark" src="images/brand/logo-96-dark.png" alt="" width="40" height="40">
+        <span>
+          <span class="brand-name" translate="no">Bhin Lab</span>
+          <span class="brand-sub">Cancer Genomics &amp; Intelligence</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="menu-button" type="button" popovertarget="site-menu" aria-controls="site-menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span>
+        </button>
+        <ul id="site-menu" class="site-menu" popover="auto">
+          <li><a href="research.html">Research</a></li>
+          <li><a href="members.html" aria-current="page">Members</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="galleries.html">Galleries</a></li>
+          <li><a href="positions.html">Positions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <h1>Members</h1>
+        <p class="lede">Professor Jinhyuk Bhin and a team of 12 working across genomics, transcriptomics and data science.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="pi-h">
+      <div class="wrap pi">
+        <div class="pi-side">
+          <div class="pi-photo"><img src="images/people/jinhyukbhin.jpg" alt="Portrait of Professor Jinhyuk Bhin" width="274" height="474" fetchpriority="high"></div>
+          <a class="btn pi-email" href="mailto:jbhin@yuhs.ac"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg> Email Professor Bhin</a>
         </div>
-
-
-    </header>
-
-
-
-
-
-    <!-- 페이지 헤더 -->
-
-
-    <section class="page-header" data-aos="fade-up">
-
-
-        <div class="container">
-
-
-            <h1 data-aos="fade-up" data-aos-delay="100">Members</h1>
-
-
-            <p data-aos="fade-up" data-aos-delay="200">Meet our dedicated research team members</p>
-
-
+        <div>
+          <h2 id="pi-h"><span class="name-ko" lang="ko">빈진혁</span>Jinhyuk Bhin, Ph.D.</h2>
+          <p class="pi-role">Principal Investigator. Assistant Professor, Department of Biomedical Systems Informatics, Yonsei University College of Medicine</p>
+          <div class="cv">
+            <div>
+              <h3>Career</h3>
+              <dl>
+                <div><dt>2023.3 – present</dt><dd>Assistant Professor, Department of Biomedical Systems Informatics, Yonsei University College of Medicine, Seoul</dd></div>
+                <div><dt>2017.1 – 2022.12</dt><dd>Postdoc, Division of Molecular Carcinogenesis, Netherlands Cancer Institute, Amsterdam</dd></div>
+                <div><dt>2016.3 – 2016.12</dt><dd>Postdoc, Institute for Basic Science, DGIST, Daegu</dd></div>
+              </dl>
+            </div>
+            <div>
+              <h3>Education</h3>
+              <dl>
+                <div><dt>2010.3 – 2016.2</dt><dd>Ph.D., Department of Chemical Engineering, POSTECH, Pohang</dd></div>
+                <div><dt>2006.3 – 2010.2</dt><dd>B.S., Department of Chemical Engineering, Sungkyunkwan University, Suwon</dd></div>
+              </dl>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
+    <section class="section" aria-labelledby="postdocs-h">
+      <div class="wrap">
+        <div class="section-head"><h2 id="postdocs-h">Postdoctoral researchers</h2></div>
+        <ul class="people">
+          <li class="person" data-role="postdoc">
+            <div class="person-photo"><img src="images/people/yoseoblee.jpg" alt="Portrait of Yoseob Lee" loading="lazy" decoding="async" width="400" height="500"></div>
+            <span class="person-role">Postdoc</span>
+            <h3>Yoseob Lee<span class="name-ko" lang="ko">이요섭</span></h3>
+            <p class="project"><span class="project-label">Project</span>Transcriptome analysis on metabolic syndromes (gallbladder cancer, MASLD)</p>
+            <ul class="edu"><li>2024.3 – Postdoc, Yonsei University</li><li>2017.3 – 2024.2 M.S.–Ph.D. in Biomedical Science, Yonsei University</li><li>2013.3 – 2017.2 B.S. in Biochemistry, Yonsei University</li></ul>
+            <p class="contact"><a href="mailto:yslee93@yuhs.ac">yslee93@yuhs.ac</a></p>
+          </li>
+          <li class="person" data-role="postdoc">
+            <div class="person-photo"><img src="images/people/yejikim.jpg" alt="Portrait of Yeji Kim" loading="lazy" decoding="async" width="400" height="500"></div>
+            <span class="person-role">Postdoc</span>
+            <h3>Yeji Kim<span class="name-ko" lang="ko">김예지</span></h3>
+            <p class="project"><span class="project-label">Project</span>Development of AI-based multimodal biomarkers to optimize immunotherapy in early-stage triple-negative breast cancer</p>
+            <ul class="edu"><li>2026.3 – Postdoc, Yonsei University College of Medicine</li><li>2024.3 – 2026.2 Postdoc, NYU Grossman School of Medicine</li><li>2018.9 – 2024.2 Ph.D. in Statistics, Korea University</li><li>2013.3 – 2017.2 B.S. in Information & Statistics, Dongduk Women’s University</li></ul>
+            <p class="contact"><a href="mailto:kimy@yuhs.ac">kimy@yuhs.ac</a></p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
+    <section class="section" aria-labelledby="students-h">
+      <div class="wrap">
+        <div class="section-head"><h2 id="students-h">Students</h2></div>
+        <ul class="people">
+          <li class="person" data-role="mph">
+            <div class="person-photo"><img src="images/people/hyungsukkim.jpg" alt="Portrait of Hyungsuk Kim" loading="lazy" decoding="async" width="400" height="500"></div>
+            <span class="person-role">M.S.–Ph.D. student</span>
+            <h3>Hyungsuk Kim<span class="name-ko" lang="ko">김형석</span></h3>
+            <p class="joined">2023.9 – M.S.–Ph.D.</p>
+            <p class="project"><span class="project-label">Project</span>Spatial transcriptomics analysis to understand the tumour microenvironment (bladder cancer, endometriosis)</p>
+            <p class="contact"><a href="mailto:suki5976@yuhs.ac">suki5976@yuhs.ac</a></p>
+          </li>
+          <li class="person" data-role="mph">
+            <div class="person-photo"><img src="images/people/jebinlee.jpg" alt="Portrait of Jebin Lee" loading="lazy" decoding="async" width="400" height="500"></div>
+            <span class="person-role">M.S.–Ph.D. student</span>
+            <h3>Jebin Lee<span class="name-ko" lang="ko">이제빈</span></h3>
+            <p class="joined">2023.9 – M.S.–Ph.D.</p>
+            <p class="project"><span class="project-label">Project</span>Characterization of the tumour microenvironment using multi-omics analysis (colorectal cancer, gastric cancer)</p>
+            <p class="contact"><a href="mailto:jabin1875@yuhs.ac">jabin1875@yuhs.ac</a></p>
+          </li>
+          <li class="person" data-role="phd">
+            <div class="person-photo"><img src="images/people/eunyoungseo.jpg" alt="Portrait of Eunyoung Seo" loading="lazy" decoding="async" width="400" height="500"></div>
+            <span class="person-role">Ph.D. student</span>
+            <h3>Eunyoung Seo<span class="name-ko" lang="ko">서은영</span></h3>
+            <p class="joined">2024.3 – Ph.D.</p>
+            <p class="project"><span class="project-label">Project</span>Statistical and AI-based models for identifying driver structural variants in WGS data</p>
+            <p class="contact"><a href="mailto:silverflo@yuhs.ac">silverflo@yuhs.ac</a></p>
+          </li>
+          <li class="person" data-role="phd">
+            <div class="person-photo"><img src="images/people/hyeonjinmoon.jpg" alt="Portrait of Hyeonjin Moon" loading="lazy" decoding="async" width="400" height="500"></div>
+            <span class="person-role">Ph.D. student</span>
+            <h3>Hyeonjin Moon<span class="name-ko" lang="ko">문현진</span></h3>
+            <p class="joined">2024.3 – Ph.D.</p>
+            <p class="project"><span class="project-label">Project</span>Gene alteration analysis of WGS data in pan-cancer</p>
+            <p class="contact"><a href="mailto:hyeonjin21@yuhs.ac">hyeonjin21@yuhs.ac</a></p>
+          </li>
+          <li class="person" data-role="mph">
+            <div class="person-photo"><img src="images/people/sejunglee.jpg" alt="Portrait of Sejung Lee" loading="lazy" decoding="async" width="400" height="500"></div>
+            <span class="person-role">M.S.–Ph.D. student</span>
+            <h3>Sejung Lee<span class="name-ko" lang="ko">이세중</span></h3>
+            <p class="joined">2024.3 – M.S.–Ph.D.</p>
+            <p class="project"><span class="project-label">Project</span>Cancer evolution analysis leveraging whole-genome sequencing (breast cancer)</p>
+            <p class="contact"><a href="mailto:sjlee98@yuhs.ac">sjlee98@yuhs.ac</a><a href="https://sejung98.github.io/" rel="noopener">sejung98.github.io</a></p>
+          </li>
+          <li class="person" data-role="mph">
+            <div class="person-photo"><img src="images/people/jisookim.jpg" alt="Portrait of Jisoo Kim" loading="lazy" decoding="async" width="400" height="500"></div>
+            <span class="person-role">M.S.–Ph.D. student</span>
+            <h3>Jisoo Kim<span class="name-ko" lang="ko">김지수</span></h3>
+            <p class="joined">2025.3 – M.S.–Ph.D.</p>
+            <p class="project"><span class="project-label">Project</span>Unveiling extraoral taste receptors through single-cell analysis</p>
+            <p class="contact"><a href="mailto:jisookim@yuhs.ac">jisookim@yuhs.ac</a></p>
+          </li>
+          <li class="person" data-role="mph">
+            <div class="person-photo"><img src="images/people/junghyuklim.jpg" alt="Portrait of Junghyeok Lim" loading="lazy" decoding="async" width="400" height="500"></div>
+            <span class="person-role">M.S.–Ph.D. student</span>
+            <h3>Junghyeok Lim<span class="name-ko" lang="ko">임정혁</span></h3>
+            <p class="joined">2025.9 – M.S.–Ph.D.</p>
+            <p class="project"><span class="project-label">Project</span>Tracing relapse and invasion lineage with long-read sequencing (breast cancer)</p>
+            <p class="contact"><a href="mailto:wjdgur2531@yuhs.ac">wjdgur2531@yuhs.ac</a></p>
+          </li>
+          <li class="person" data-role="ms">
+            <div class="person-photo"><img src="images/people/siyoonpark.jpg" alt="Portrait of Siyoon Park" loading="lazy" decoding="async" width="400" height="500"></div>
+            <span class="person-role">M.S. student</span>
+            <h3>Siyoon Park<span class="name-ko" lang="ko">박시윤</span></h3>
+            <p class="joined">2026.3 – M.S.</p>
+            <p class="project"><span class="project-label">Project</span>Mapping the core programs underpinning lymph-node metastasis in HR+ breast cancer with in situ single-cell spatial transcriptomics</p>
+            <p class="contact"><a href="mailto:dasi1122@naver.com">dasi1122@naver.com</a></p>
+          </li>
+          <li class="person" data-role="ugrad">
+            <div class="person-photo"><img src="images/people/sojungyoon.jpg" alt="Portrait of Sojung Yoon" loading="lazy" decoding="async" width="400" height="500"></div>
+            <span class="person-role">Undergraduate researcher</span>
+            <h3>Sojung Yoon<span class="name-ko" lang="ko">윤소정</span></h3>
+            <p class="contact"><a href="mailto:ysojung0413@gmail.com">ysojung0413@gmail.com</a></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="staff-h">
+      <div class="wrap">
+        <div class="section-head"><h2 id="staff-h">Staff</h2></div>
+        <ul class="people">
+          <li class="person" data-role="staff">
+            <div class="person-photo"><img src="images/people/myeongkeon.jpg" alt="Portrait of Myeongkeon Hwang" loading="lazy" decoding="async" width="400" height="500"></div>
+            <span class="person-role">Big Data Engineer</span>
+            <h3>Myeongkeon Hwang<span class="name-ko" lang="ko">황명건</span></h3>
+            <p class="project"><span class="project-label">Project</span>Bio-big data infrastructure management, AI-driven modeling research, and Advanced Omics Hub program management</p>
+            <ul class="edu"><li>2025.10 – Big Data Engineer</li></ul>
+            <p class="contact"><a href="mailto:mkhwang28@yuhs.ac">mkhwang28@yuhs.ac</a></p>
+          </li>
+        </ul>
+      </div>
     </section>
 
 
-
-
-
-    <!-- 메인 콘텐츠 -->
-
-
-    <main class="subpage-content" data-aos="fade-up">
-
-
-        <div class="container">
-
-
-            <section class="members-list">
-
-
-                <h2>Principal Investigator</h2>
-
-
-
-
-
-                <div class="member-card">
-
-
-                    <div class="member-photo">
-
-
-                        <img src="images/jinhyukbhin.png" alt="Jinhyuk Bhin" class="member-img pi-img"
-                            onerror="this.style.display='none';">
-
-
-                    </div>
-
-
-                    <div class="member-info">
-
-
-                        <h3>빈진혁 / Jinhyuk Bhin</h3>
-
-
-                        <h4>PROFESSIONAL CAREER</h4>
-
-
-                        <p>2023.3 - Present Assistant Professor, Yonsei University College of Medicine, Department of
-                            Biomedical Systems Informatics, Seoul, South Korea</p>
-
-
-                        <p>2017.1 - 2022.12 Postdoc, Netherlands Cancer Institute, Division of Molecular Carcinogenesis,
-                            Amsterdam, The Netherlands</p>
-
-
-                        <p>2016.3 - 2016.12 Postdoc, Institute for Basic Science, DGIST, Daegu, South Korea</p>
-
-
-                        <h4>EDUCATION</h4>
-
-
-                        <p>2010.3 - 2016.2 Ph.D., POSTECH, Department of Chemical Engineering, Pohang, South Korea</p>
-
-
-                        <p>2006.3 - 2010.2 B.S., Sungkyunkwan University, Department of Chemical Engineering, Suwon,
-                            South Korea</p>
-
-
-                    </div>
-
-
-                </div>
-
-
-
-
-
-                <h2>Members</h2>
-
-
-
-
-
-                <div class="member-card">
-
-
-                    <div class="member-photo">
-
-
-                        <img src="images/yoseoblee.png" alt="Yoseob Lee" class="member-img"
-                            onerror="this.style.display='none';">
-
-
-                    </div>
-
-
-                    <div class="member-info">
-
-
-                        <h3>이요섭 / Yoseob Lee <span class="email">(yslee93@yuhs.ac)</span></h3>
-
-
-                        <h4>PROFESSIONAL CAREER</h4>
-
-
-                        <p>2024.3 - Postdoc, Yonsei University</p>
-
-
-                        <p class="project">Project: Transcriptome analysis on metabolic syndromes (Gallbladder cancer,
-                            MASLD)</p>
-
-
-                        <h4>EDUCATION</h4>
-
-
-                        <p>2017.3 - 2024.2 M.S.-Ph.D. in Biomedical Science, Yonsei University</p>
-
-
-                        <p>2013.3 - 2017.2 B.S. in Biochemistry, Yonsei University</p>
-
-
-                    </div>
-
-
-                </div>
-
-
-
-
-
-                <div class="member-card">
-
-
-                    <div class="member-photo">
-
-
-                        <img src="images/Eunyoungseo.jpg" alt="Eunyoung Seo" class="member-img"
-                            onerror="this.style.display='none';">
-
-
-                    </div>
-
-
-                    <div class="member-info">
-
-
-                        <h3>서은영 / Eunyoung Seo <span class="email">(silverflo@yuhs.ac)</span></h3>
-
-
-                        <h4>EDUCATION</h4>
-
-
-                        <p>2024.3 - Ph.D. </p>
-
-
-                        <p class="project">Project: Statistical and AI-Based Models for Identifying Driver Structural
-                            Variants in WGS Data</p>
-
-
-                        <p>2022.3 - 2024.2 M.S. in Data Science, Ewha University</p>
-
-
-                        <p>2018.3 - 2022.2 B.S. in Pharmacy, Inje University</p>
-
-
-                    </div>
-
-
-                </div>
-
-
-
-
-
-                <div class="member-card">
-
-
-                    <div class="member-photo">
-
-
-                        <img src="images/hyeonjinmoon.png" alt="Hyeonjin Moon" class="member-img"
-                            onerror="this.style.display='none';">
-
-
-                    </div>
-
-
-                    <div class="member-info">
-
-
-                        <h3>문현진 / Hyeonjin Moon <span class="email">(hyeonjin21@yuhs.ac)</span></h3>
-
-
-                        <h4>EDUCATION</h4>
-
-
-                        <p>2024.3 - Ph.D. </p>
-
-
-                        <p class="project">Project: Gene alterations analysis of WGS data in pan-cancer</p>
-
-
-                        <p>2020.3 - 2022.2 M.S. in Microbial Biotechnology, DanKook University</p>
-
-
-                        <p>2016.3 - 2020.2 B.S. in Microbiology, DanKook University</p>
-
-
-                    </div>
-
-
-                </div>
-
-
-
-
-
-                <div class="member-card">
-
-
-                    <div class="member-photo">
-
-
-                        <img src="images/hyungsukkim.png" alt="Hyungsuk Kim" class="member-img"
-                            onerror="this.style.display='none';">
-
-
-                    </div>
-
-
-                    <div class="member-info">
-
-
-                        <h3>김형석 / Hyungsuk Kim <span class="email">(suki5976@yuhs.ac)</span></h3>
-
-
-                        <h4>EDUCATION</h4>
-
-
-                        <p>2023.9 - M.S.-Ph.D.</p>
-
-
-                        <p class="project">Project: Spatial transcriptomics analysis to understand tumor
-                            microenvironment (Bladder cancer, endometriosis)</p>
-
-
-                        <p>2017.3 - 2023.2 B.S.in Biomedical Engineering, Yeungnam University</p>
-
-
-                    </div>
-
-
-                </div>
-
-
-
-
-
-                <div class="member-card">
-
-
-                    <div class="member-photo">
-
-
-                        <img src="images/jebinlee.jpg" alt="Jebin Lee" class="member-img"
-                            onerror="this.style.display='none';">
-
-
-                    </div>
-
-
-                    <div class="member-info">
-
-
-                        <h3>이제빈 / Jebin Lee <span class="email">(jabin1875@yuhs.ac)</span></h3>
-
-
-                        <h4>EDUCATION</h4>
-
-
-                        <p>2023.9 - M.S.-Ph.D.</p>
-
-
-                        <p class="project">Project: Characterization of tumor microenvironment using multi-omics
-                            analysis (Colorectal cancer, Gastric cancer)</p>
-
-
-                        <p>2018.3 - 2023.8 B.S. in Biomedical Systems Science, Bio-software, Kangwon National University
-                        </p>
-
-
-                    </div>
-
-
-                </div>
-
-
-
-
-
-                <div class="member-card">
-
-
-                    <div class="member-photo">
-
-
-                        <img src="images/sejunglee.png" alt="Sejung Lee" class="member-img"
-                            onerror="this.style.display='none';">
-
-
-                    </div>
-
-
-                    <div class="member-info">
-
-
-                        <h3>이세중 / Sejung Lee <span class="email">(sjlee98@yuhs.ac)</span></h3>
-
-
-                        <h4>EDUCATION</h4>
-
-
-                        <p>2024.3 - M.S.-Ph.D.</p>
-
-
-                        <p class="project">Project: Cancer evolution analysis leveraging whole genome sequencing (Breast
-                            cancer)</p>
-
-
-                        <p>2018.3 - 2024.2 B.S. in Genetic Engineering, KyungHee University</p>
-
-
-                        <h4>HOMEPAGE</h4>
-
-
-                        <p><a class="member-home" href="https://sejung98.github.io/" target="_blank"
-                                rel="noopener noreferrer">sejung98.github.io</a></p>
-
-
-                    </div>
-
-
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-                <div class="member-card">
-
-
-                    <div class="member-photo">
-
-
-                        <img src="images/jisookim.png" alt="Jisoo Kim" class="member-img"
-                            onerror="this.style.display='none';">
-
-
-                    </div>
-
-
-                    <div class="member-info">
-
-
-                        <h3>김지수 / Jisoo Kim <span class="email">(jisookim@yuhs.ac)</span></h3>
-
-
-                        <h4>EDUCATION</h4>
-
-
-                        <p>2025.3 - M.S.-Ph.D.</p>
-
-
-                        <p class="project">Project: Unveiling Extraoral Taste Receptors through Single-Cell Analysis</p>
-
-
-                        <p>2021.3 - 2025.2 B.S. in Biopharmaceutical Sciences, Big Data Science , Sungshin Women's
-                            University</p>
-
-
-                    </div>
-
-
-                </div>
-
-
-
-
-
-                <div class="member-card">
-
-
-                    <div class="member-photo">
-
-
-                        <img src="images/junghyuklim.png" alt="Junghyeok Lim" class="member-img"
-                            onerror="this.style.display='none';">
-
-
-                    </div>
-
-
-                    <div class="member-info">
-
-
-                        <h3>임정혁 / Junghyeok Lim <span class="email">(wjdgur2531@yuhs.ac)</span></h3>
-
-
-                        <h4>EDUCATION</h4>
-
-
-                        <p>2025.9 - M.S.-Ph.D.</p>
-
-
-                        <p class="project">Project: Tracing relapse and invasion lineage with long read sequencing
-                            (Breast cancer)</p>
-
-
-                        <p>2019.3 - 2024.2 B.S. in Biopharmaceutical, Konkuk University</p>
-
-
-                    </div>
-
-
-                </div>
-
-
-
-
-
-                <div class="member-card">
-
-
-                    <div class="member-photo">
-
-
-                        <img src="images/siyoonpark.jpeg" alt="Siyoon Park" class="member-img"
-                            onerror="this.style.display='none';">
-
-
-                    </div>
-
-
-                    <div class="member-info">
-
-
-                        <h3>박시윤 / Siyoon Park <span class="email">(dasi1122@naver.com)</span></h3>
-
-
-                        <h4>EDUCATION</h4>
-
-
-                        <p>2026.3 - M.S.</p>
-
-
-                        <p class="project">Project: Mapping the Core Programs Underpinning Lymph-Node Metastasis in HR+
-                            Breast Cancer with In Situ Single-Cell Spatial Transcriptomics</p>
-
-
-                        <p>2018.3 - 2024.8 B.S. in Systems Biology, Yonsei University</p>
-
-
-                    </div>
-
-
-                </div>
-
-
-
-
-
-                <div class="member-card">
-
-
-                    <div class="member-photo">
-
-
-                        <img src="images/myeongkeon.jpg" alt="Myeongkeon Hwang" class="member-img"
-                            onerror="this.style.display='none';">
-
-
-                    </div>
-
-
-                    <div class="member-info">
-
-
-                        <h3>황명건 / Myeongkeon Hwang <span class="email">(mkhwang28@yuhs.ac)</span></h3>
-
-
-                        <h4>Big Data Engineer</h4>
-
-
-                        <p>2025.10 - </p>
-
-
-                        <p class="project">Project: Bio-Big Data Infrastructure Management, AI-Driven Modeling Research,
-                            and Advanced Omics Hub Program Management</p>
-
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="member-card">
-
-
-                    <div class="member-photo member-photo--empty" aria-hidden="true"></div>
-
-
-                    <div class="member-info">
-
-
-                        <h3>김세존 / Sejon Kim <span class="email">(sejonashby@gmail.com)</span></h3>
-
-
-                        <h4>Undergraduate Intern</h4>
-
-
-                        <p class="project">Project: Characterizing poor-prognosis high-grade serous ovarian cancer using
-                            genetic and transcriptomic data</p>
-
-
-                        <h4>EDUCATION</h4>
-
-
-                        <p>2026.07 - Undergraduate Research Intern</p>
-
-
-                        <p>2021.09 - B.S. in Biochemistry, University of Washington</p>
-
-
-                    </div>
-
-                </div>
-
-
-
-            </section>
-
-            <section class="alumni-section">
-            <div class="alumni-columns">
-                <div class="alumni-column alumni-column--alumni">
-                    <h2>Alumni</h2>
-                    <div class="alumni-list"></div>
-                </div>
-                <div class="alumni-column alumni-column--intern">
-                    <h2>Undergraduate Internship</h2>
-                    <div class="alumni-list">
-                        <div class="alumni-card">
-                            <div class="member-info">
-                                <h3>박수연 / Sooyeon Park</h3>
-                            </div>
-                        </div>
-                        <div class="alumni-card">
-                            <div class="member-info">
-                                <h3>박소윤 / Soyoon Park</h3>
-                            </div>
-                        </div>
-                        <div class="alumni-card">
-                            <div class="member-info">
-                                <h3>조승원 / Seungwon Cho</h3>
-                            </div>
-                        </div>
-                        <div class="alumni-card">
-                            <div class="member-info">
-                                <h3>배용준 / Yongjun Bae</h3>
-                            </div>
-                        </div>
-                        <div class="alumni-card">
-                            <div class="member-info">
-                                <h3>임재윤 / Jaeyoon Lim</h3>
-                            </div>
-                        </div>
-                        <div class="alumni-card">
-                            <div class="member-info">
-                                <h3>신수민 / Sumin Shin</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </section>
-
+    <section class="section" aria-labelledby="alumni-h">
+      <div class="wrap alumni-cols">
+        <div>
+          <h2 id="alumni-h">Undergraduate interns</h2>
+          <ul class="name-list">
+            <li>Sooyeon Park<span class="name-ko" lang="ko">박수연</span></li>
+            <li>Soyoon Park<span class="name-ko" lang="ko">박소윤</span></li>
+            <li>Seungwon Cho<span class="name-ko" lang="ko">조승원</span></li>
+            <li>Yongjun Bae<span class="name-ko" lang="ko">배용준</span></li>
+            <li>Jaeyoon Lim<span class="name-ko" lang="ko">임재윤</span></li>
+            <li>Sumin Shin<span class="name-ko" lang="ko">신수민</span></li>
+            <li>Sejon Kim<span class="name-ko" lang="ko">김세존</span></li>
+          </ul>
         </div>
-
-    </main>
-
-
-
-
-
-    <!-- 푸터 -->
-
-
-    <footer class="site-footer" data-aos="fade-up">
-
-
-        <div class="container">
-
-
-            <div class="footer-content">
-
-
-                <div class="footer-logo" data-aos="fade-up" data-aos-delay="100">
-
-
-                    <h3>CGI</h3>
-
-
-                    <p>Cancer Genomics & Intelligence Laboratory</p>
-
-
-                    <p>College of Medicine, Yonsei University</p>
-
-
-                    <p>by Professor Jinhyuk Bhin</p>
-
-
-                </div>
-
-
-                <div class="footer-links" data-aos="fade-up" data-aos-delay="200">
-
-
-                    <h4>Quick Links</h4>
-
-
-                    <ul>
-
-
-                        <li><a href="index.html#about">About Us</a></li>
-
-
-                        <li><a href="research.html">Research</a></li>
-
-
-                        <li><a href="news.html">News</a></li>
-
-
-                        <li><a href="publications.html">Publications</a></li>
-
-
-                    </ul>
-
-
-                </div>
-
-
-                <div class="footer-contact" data-aos="fade-up" data-aos-delay="300">
-
-
-                    <h4>Contact</h4>
-
-
-                    <p>Email: jbhin@yuhs.ac</p>
-
-
-                </div>
-
-
-            </div>
-
-
-            <div class="footer-bottom" data-aos="fade-up" data-aos-delay="400">
-
-
-                <p>&copy; 2025 Website developed by Sejung. Logo designed by Hyeonjin. All rights reserved.</p>
-
-
-            </div>
-
-
+        <div>
+          <h2>Alumni</h2>
+          <p class="empty-note">Our first alumni will be listed here.</p>
         </div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="images/brand/logo-96-dark.png" alt="" width="40" height="40" loading="lazy">
+            <span>
+              <span class="brand-name" translate="no">Bhin Lab</span>
+              <span class="brand-sub">Cancer Genomics &amp; Intelligence Laboratory</span>
+            </span>
+          </a>
+          <p class="affil">Department of Biomedical Systems Informatics<br>Yonsei University College of Medicine<br>Led by Professor Jinhyuk Bhin</p>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="galleries.html">Galleries</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:jbhin@yuhs.ac">jbhin@yuhs.ac</a></li>
+            <li><a href="https://github.com/CPMlab" rel="noopener">GitHub: CPMlab</a></li>
+            <li><a href="contact.html">Address and map</a></li>
+            <li><a href="positions.html">Open positions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>&copy; 2026 Bhin Lab, Yonsei University College of Medicine.</p>
+        <p>Website developed by Sejung. Logo designed by Hyeonjin.</p>
+        <button class="theme-toggle" type="button">
+          <span class="to-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>Switch to dark theme</span>
+          <span class="to-light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg>Switch to light theme</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+  <div class="spectrum" aria-hidden="true"></div>
 
-    </footer>
-
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-    <script>
-
-
-        AOS.init({ duration: 800, easing: 'ease-out', once: true, offset: 100 });
-
-
-    </script>
-
-
-    <script>
-
-
-        // 모바일 메뉴 토글
-
-
-        document.addEventListener('DOMContentLoaded', function () {
-
-
-            const logoLink = document.querySelector('.logo a[href="index.html"]');
-
-
-            if (logoLink) {
-
-
-                logoLink.addEventListener('click', function () {
-
-
-                    sessionStorage.setItem('skipIndexLoading', 'true');
-
-
-                });
-
-
-            }
-
-
-            const mobileToggle = document.querySelector('.mobile-menu-toggle');
-
-
-            const mobileDropdown = document.querySelector('.mobile-dropdown');
-
-
-            if (mobileToggle && mobileDropdown) {
-
-
-                mobileToggle.addEventListener('click', function (e) {
-
-
-                    e.stopPropagation();
-
-
-                    mobileDropdown.classList.toggle('active');
-
-
-                });
-
-
-                document.addEventListener('click', function (e) {
-
-
-                    if (!mobileDropdown.contains(e.target) && !mobileToggle.contains(e.target)) {
-
-
-                        mobileDropdown.classList.remove('active');
-
-
-                    }
-
-
-                });
-
-
-            }
-
-
-        });
-
-
-    </script>
-    <script src="js/site-scroll.js"></script>
-
+  <script src="js/site.js?v=20261127w" defer></script>
+  <script src="js/flow.js?v=20261127w" defer></script>
 </body>
-
-
 </html>

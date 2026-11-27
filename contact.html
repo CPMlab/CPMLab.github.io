@@ -1,184 +1,144 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - CGI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <script>try{if(localStorage.getItem("color-scheme")==="light")document.querySelector('meta[name="color-scheme"]').content="light"}catch(e){}</script>
+  <title>Contact · Bhin Lab, Yonsei University</title>
+  <meta name="description" content="Address, email and map for the Cancer Genomics &amp; Intelligence Laboratory, Gangnam Severance Hospital, Yonsei University College of Medicine.">
+  <link rel="canonical" href="https://cgi.yonsei.ac.kr/contact.html">
+  <meta name="theme-color" content="#0a1122">
 
-  <!-- 파비콘 설정 -->
-  <link rel="icon" type="image/x-icon" href="images/logo_251125.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bhin Lab · Cancer Genomics &amp; Intelligence">
+  <meta property="og:title" content="Contact · Bhin Lab, Yonsei University">
+  <meta property="og:description" content="Address, email and map for the Cancer Genomics &amp; Intelligence Laboratory, Gangnam Severance Hospital, Yonsei University College of Medicine.">
+  <meta property="og:url" content="https://cgi.yonsei.ac.kr/contact.html">
+  <meta property="og:image" content="https://cgi.yonsei.ac.kr/images/brand/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="style.css?v=2025012809">
-  <link rel="stylesheet" href="subpage.css?v=2025012809">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/site.css?v=20261127w">
 </head>
-
 <body>
-  <!-- 헤더 -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <div class="header-container">
-      <div class="logo">
-        <a href="index.html">
-          <img src="images/logo_251125.png" alt="로고" class="logo-image" onerror="this.style.display='none';">
-          <div>
-            <h1>Bhin lab</h1>
-            <p class="lab-subtitle">Cancer Genomics & Intelligence</p>
-          </div>
-        </a>
-      </div>
-      <nav class="main-nav">
-        <ul>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img class="logo-for-light" src="images/brand/logo-96.png" alt="" width="40" height="40">
+        <img class="logo-for-dark" src="images/brand/logo-96-dark.png" alt="" width="40" height="40">
+        <span>
+          <span class="brand-name" translate="no">Bhin Lab</span>
+          <span class="brand-sub">Cancer Genomics &amp; Intelligence</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="menu-button" type="button" popovertarget="site-menu" aria-controls="site-menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span>
+        </button>
+        <ul id="site-menu" class="site-menu" popover="auto">
           <li><a href="research.html">Research</a></li>
           <li><a href="members.html">Members</a></li>
           <li><a href="publications.html">Publications</a></li>
           <li><a href="news.html">News</a></li>
-          <li><a href="positions.html">Positions</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
           <li><a href="galleries.html">Galleries</a></li>
+          <li><a href="positions.html">Positions</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
       </nav>
-
-      <!-- 모바일 메뉴 버튼 -->
-      <div class="mobile-menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <!-- 모바일 드롭다운 메뉴 -->
-      <div class="mobile-dropdown">
-        <ul>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="members.html">Members</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="positions.html">Positions</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="galleries.html">Galleries</a></li>
-        </ul>
-      </div>
     </div>
   </header>
 
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <h1>Contact</h1>
+        <p class="lede">We are at the Future Medicine Research Center of Gangnam Severance Hospital in Seoul.</p>
+      </div>
+    </section>
 
-  <!-- 메인 콘텐츠 -->
-  <main class="subpage-content" data-aos="fade-up">
-    <div class="container">
-      <!-- 연락처 정보 섹션 -->
-      <section class="contact-info-section" data-aos="fade-up">
-        <h2>Contact Information</h2>
-        <div class="contact-grid">
-          <div class="contact-details">
-            <h3>Get in Touch</h3>
-            <div class="contact-item">
-              <i class="contact-icon">📍</i>
-              <div>
-                <h4>Address</h4>
-                <p>서울특별시 강남구 도곡로 237 107호 <br> (강남세브란스병원 미래의학연구센터)<br>Room 107, 237, Dogok-ro, Gangnam-gu, Seoul,
-                  Republic of Korea</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <i class="contact-icon">📧</i>
-              <div>
-                <h4>Email</h4>
-                <p>jbhin@yuhs.ac</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <i class="contact-icon">💻</i>
-              <div>
-                <h4>GitHub</h4>
-                <p><a href="https://github.com/CPMlab" target="_blank">CGI Lab GitHub</a></p>
-              </div>
-            </div>
+    <section class="section">
+      <div class="wrap contact-grid">
+        <dl class="contact-list">
+          <div>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+            <dt>Address</dt>
+            <dd><span lang="ko">서울특별시 강남구 도곡로 237 107호<br>(강남세브란스병원 미래의학연구센터)</span>
+              <span class="en">Room 107, 237 Dogok-ro, Gangnam-gu, Seoul, Republic of Korea</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=%EA%B0%95%EB%82%A8%EC%84%B8%EB%B8%8C%EB%9E%80%EC%8A%A4%EB%B3%91%EC%9B%90%20%EB%AF%B8%EB%9E%98%EC%9D%98%ED%95%99%EC%97%B0%EA%B5%AC%EC%84%BC%ED%84%B0" rel="noopener">Open in Google Maps</a></dd>
           </div>
-          <div class="contact-map">
-            <h3>Location</h3>
-            <div class="map-container">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.6421892766877!2d127.04246067647982!3d37.49444177980739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f15.1!3m3!1m2!1s0x357ca6aa3b23a5a3%3A0xc2a13c8bb2bc66a!2z7Jew7IS47Yq567OE6rCVIOqwleuCqOyEuOu4jOudvOyKpOuztOybkCDrr7jrnpjsnZjtlZnsl7Drta7qtazshLzthLA!5e0!3m2!1sko!2skr!4v1736242234567!5m2!1sko!2skr&gestureHandling=auto&zoom=15"
-                class="google-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                title="연세대 강남세브란스병원 미래의학연구센터 위치" style="pointer-events: auto;">
-              </iframe>
-
-            </div>
+          <div>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span>
+            <dt>Email</dt>
+            <dd><a href="mailto:jbhin@yuhs.ac">jbhin@yuhs.ac</a></dd>
           </div>
-        </div>
-      </section>
-    </div>
-  </main>
-
-
-
-
-
-
-  <!-- 푸터 -->
-  <footer class="site-footer" data-aos="fade-up">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo" data-aos="fade-up" data-aos-delay="100">
-          <h3>CGI</h3>
-          <p>Cancer Genomics & Intelligence Laboratory</p>
-          <p>College of Medicine, Yonsei University</p>
-          <p>by Professor Jinhyuk Bhin</p>
-        </div>
-        <div class="footer-links" data-aos="fade-up" data-aos-delay="200">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html#about">About Us</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="publications.html">Publications</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact" data-aos="fade-up" data-aos-delay="300">
-          <h4>Contact</h4>
-          <p>Email: jbhin@yuhs.ac</p>
+          <div>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg></span>
+            <dt>GitHub</dt>
+            <dd><a href="https://github.com/CPMlab" rel="noopener">github.com/CPMlab</a></dd>
+          </div>
+        </dl>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.6421892766877!2d127.04246067647982!3d37.49444177980739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f15.1!3m3!1m2!1s0x357ca6aa3b23a5a3%3A0xc2a13c8bb2bc66a!2z7Jew7IS47Yq567OE6rCVIOqwleuCqOyEuOu4jOudvOyKpOuztOybkCDrr7jrnpjsnZjtlZnsl7Drta7qtazshLzthLA!5e0!3m2!1sko!2skr!4v1736242234567!5m2!1sko!2skr"
+            title="Map: Future Medicine Research Center, Gangnam Severance Hospital" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
         </div>
       </div>
-      <div class="footer-bottom" data-aos="fade-up" data-aos-delay="400">
-        <p>&copy; 2025 Website developed by Sejung. Logo designed by Hyeonjin. All rights reserved.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="images/brand/logo-96-dark.png" alt="" width="40" height="40" loading="lazy">
+            <span>
+              <span class="brand-name" translate="no">Bhin Lab</span>
+              <span class="brand-sub">Cancer Genomics &amp; Intelligence Laboratory</span>
+            </span>
+          </a>
+          <p class="affil">Department of Biomedical Systems Informatics<br>Yonsei University College of Medicine<br>Led by Professor Jinhyuk Bhin</p>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="galleries.html">Galleries</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:jbhin@yuhs.ac">jbhin@yuhs.ac</a></li>
+            <li><a href="https://github.com/CPMlab" rel="noopener">GitHub: CPMlab</a></li>
+            <li><a href="contact.html">Address and map</a></li>
+            <li><a href="positions.html">Open positions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>&copy; 2026 Bhin Lab, Yonsei University College of Medicine.</p>
+        <p>Website developed by Sejung. Logo designed by Hyeonjin.</p>
+        <button class="theme-toggle" type="button">
+          <span class="to-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>Switch to dark theme</span>
+          <span class="to-light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg>Switch to light theme</span>
+        </button>
       </div>
     </div>
   </footer>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 800, easing: 'ease-out', once: true, offset: 100 });
-  </script>
-  <script>
-    // 모바일 메뉴 토글
-    document.addEventListener('DOMContentLoaded', function () {
-      const logoLink = document.querySelector('.logo a[href="index.html"]');
-      if (logoLink) {
-        logoLink.addEventListener('click', function () {
-          sessionStorage.setItem('skipIndexLoading', 'true');
-        });
-      }
-      const mobileToggle = document.querySelector('.mobile-menu-toggle');
-      const mobileDropdown = document.querySelector('.mobile-dropdown');
-      if (mobileToggle && mobileDropdown) {
-        mobileToggle.addEventListener('click', function (e) {
-          e.stopPropagation();
-          mobileDropdown.classList.toggle('active');
-        });
-        document.addEventListener('click', function (e) {
-          if (!mobileDropdown.contains(e.target) && !mobileToggle.contains(e.target)) {
-            mobileDropdown.classList.remove('active');
-          }
-        });
-      }
+  <div class="spectrum" aria-hidden="true"></div>
 
-      // 스크롤 시 헤더 배경 처리
-    });
-  </script>
-  <script src="js/site-scroll.js"></script>
+  <script src="js/site.js?v=20261127w" defer></script>
+  <script src="js/flow.js?v=20261127w" defer></script>
 </body>
-
 </html>
