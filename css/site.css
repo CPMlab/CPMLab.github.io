@@ -38,6 +38,8 @@
   --tag-dark: #ff8fb2;
   --hanbit-light: #c8102e;
   --hanbit-dark: #ff6b6b;
+  --teal-light: #3d8a91;
+  --teal-dark: #5fc0c6;
 
   --paper: var(--paper-light);
   --surface: var(--surface-light);
@@ -54,6 +56,7 @@
   --footer: var(--footer-light);
   --tag: var(--tag-light);
   --hanbit: var(--hanbit-light);
+  --teal: var(--teal-light);
   @media (prefers-color-scheme: dark) {
     --paper: var(--paper-dark);
     --surface: var(--surface-dark);
@@ -70,6 +73,7 @@
     --footer: var(--footer-dark);
     --tag: var(--tag-dark);
     --hanbit: var(--hanbit-dark);
+    --teal: var(--teal-dark);
       }
   @supports (color: light-dark(white, black)) {
     --paper: light-dark(var(--paper-light), var(--paper-dark));
@@ -87,6 +91,7 @@
     --footer: light-dark(var(--footer-light), var(--footer-dark));
     --tag: light-dark(var(--tag-light), var(--tag-dark));
     --hanbit: light-dark(var(--hanbit-light), var(--hanbit-dark));
+    --teal: light-dark(var(--teal-light), var(--teal-dark));
       }
 
   color-scheme: light dark;
@@ -284,17 +289,22 @@ em, i { font-style: italic; }
 }
 .brand:hover { color: var(--ink); }
 .brand img { width: 2.5rem; height: 2.5rem; }
+/* wordmark: Arial capitals with wide letter spacing (the professor's "C" option) */
 .brand-name {
   display: block;
-  font: 700 1.1875rem/1.1 var(--font-serif);
-  letter-spacing: -0.01em;
+  font: 700 1.2rem/1.1 var(--font-sans);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
+.brand-accent { color: var(--teal); }
 .brand-sub {
   display: block;
-  font-size: 0.78rem;
+  margin-top: 0.3rem;
+  font-size: 0.62rem;
   line-height: 1.3;
   color: var(--ink-3);
-  letter-spacing: 0.01em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .menu-button {
@@ -1203,6 +1213,7 @@ button.news-media:focus-visible { outline: 2px solid var(--focus); outline-offse
 }
 .site-footer .brand { color: #fff; }
 .site-footer .brand-sub { color: rgb(255 255 255 / 0.6); }
+.site-footer .brand-accent { color: var(--teal-dark); }
 .site-footer h2 { font: 600 0.9rem/1.2 var(--font-sans); color: #fff; letter-spacing: 0; margin-bottom: 1rem; }
 .site-footer p { line-height: 1.6; }
 .site-footer .affil { margin-top: 1.25rem; }
@@ -1223,6 +1234,7 @@ button.news-media:focus-visible { outline: 2px solid var(--focus); outline-offse
   color: rgb(255 255 255 / 0.55);
 }
 .footer-base p { margin: 0; }
+.footer-credits { display: grid; gap: 0.2rem; }
 /* the logo's ring as a band that keeps flowing; still under reduced motion */
 .spectrum {
   position: relative;
