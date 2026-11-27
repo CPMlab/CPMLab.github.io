@@ -420,6 +420,7 @@
         items.forEach(function (ev, i) {
           var thumb = ev.images && ev.images[0] ? ev.images[0] : '';
           var title = ev.title || '';
+          var titleOneLine = title.replace(/\n/g, ' ');
           var date = ev.date || '';
           var div = document.createElement('div');
           div.className = 'today-item';
@@ -428,10 +429,10 @@
           div.onclick = function () { window.location.href = 'galleries.html'; };
           div.innerHTML =
             '<div class="today-image">' +
-              '<img src="' + thumb + '" alt="' + title.replace(/"/g, '&quot;') + '" class="today-img" onerror="this.style.display=\'none\'; if(this.nextElementSibling) this.nextElementSibling.style.display=\'flex\';">' +
-              '<div class="image-placeholder" style="display: none;">' + title.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>' +
+              '<img src="' + thumb + '" alt="' + titleOneLine.replace(/"/g, '&quot;') + '" class="today-img" onerror="this.style.display=\'none\'; if(this.nextElementSibling) this.nextElementSibling.style.display=\'flex\';">' +
+              '<div class="image-placeholder" style="display: none;">' + titleOneLine.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>' +
             '</div>' +
-            '<h3>' + title.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</h3>' +
+            '<h3>' + title.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>') + '</h3>' +
             '<span class="date">' + date.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</span>';
           grid.appendChild(div);
         });

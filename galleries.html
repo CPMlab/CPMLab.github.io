@@ -153,7 +153,7 @@
                 var date = (ev.date || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
                 var slidesHtml = (ev.images || []).map(function (src, i) {
                     return '<div class="event-slide' + (i === 0 ? ' active' : '') + '">' +
-                        '<img src="' + src.replace(/"/g, '&quot;') + '" alt="' + title + '" class="event-img" onerror="this.style.display=\'none\';">' +
+                        '<img src="' + src.replace(/"/g, '&quot;') + '" alt="' + title.replace(/\n/g, ' ') + '" class="event-img" onerror="this.style.display=\'none\';">' +
                         '</div>';
                 }).join('');
                 var delay = delays[idx % delays.length];
@@ -163,7 +163,7 @@
                     '<button class="prev-btn" onclick="changeSlide(this, -1)">&#10094;</button>' +
                     '<button class="next-btn" onclick="changeSlide(this, 1)">&#10095;</button>' +
                     '</div></div>' +
-                    '<div class="event-caption"><h3>' + title + '</h3><p class="event-date">' + date + '</p></div>' +
+                    '<div class="event-caption"><h3>' + title.replace(/\n/g, '<br>') + '</h3><p class="event-date">' + date + '</p></div>' +
                     '</div>';
                 container.insertAdjacentHTML('beforeend', itemHtml);
             });

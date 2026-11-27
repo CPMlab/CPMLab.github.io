@@ -4,7 +4,7 @@
  * Add new events at the top of the array to update both pages.
  */
 window.GALLERIES_DATA = [
-  { title: "BIOINFO/GIW ISCB-Asia 2026", date: "2026.11.19", images: ["images/events/261119.jpg"] },
+  { title: "BIOINFO/GIW ISCB-Asia 2026\n(빈진혁 교수, 마크로젠 젊은생명정보학자상 수상)", date: "2026.11.17~20", images: ["images/events/261119_award1.jpg", "images/events/261119_award2.jpg", "images/events/261119.jpg"] },
   { title: "Teachers' Day", date: "2026.05.15", images: ["images/events/260515_1.jpg", "images/events/260515_2.jpg"] },
   { title: "2026 KOGO", date: "2026.02.04~06", images: ["images/events/2026_KOGO_2.jpg", "images/events/2026_KOGO_1.jpg"] },
   { title: "Songnyeonhoe", date: "2025.12.17", images: ["images/events/20260107.jpg"] },
